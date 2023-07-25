@@ -1,0 +1,2 @@
+PIXHAWK_ADDRESS = '/dev/serial/by-id/usb-ArduPilot_Pixhawk1_3F0049001451353430383030-if00'
+FLIGHT_ALTITUDE_METERS = '1.5'
