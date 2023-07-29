@@ -14,10 +14,19 @@ class RRT:
         self.states.append(self.start)
 
     def random_state(self):
+        """
+        Generate a new state in a given dimensions for a space
+        :return:
+        """
         random_point = [random.randint(0, self.map_dimensions[0]), random.randint(0, self.map_dimensions[1])]
         return random_point
 
     def nearest_neighbor(self, random_point):
+        """
+        Get the closest point for a given set of points
+        :param random_point:
+        :return:
+        """
         distance_random_state = 1000
         state_parent_index = 0
         for i in range(len(self.states)):
@@ -40,10 +49,20 @@ class RRT:
         return vector_normalized
 
     def new_state(self, neighbor, norm):
+        """
+        Generate a new state based on a norm for two points
+        :param neighbor:
+        :param norm:
+        :return:
+        """
         new_point = [neighbor[0] + norm[0], neighbor[1] + norm[1]]
         self.states.append(new_point)
 
     def generate_rrt(self):
+        """
+        Generate a new set of points and plot them
+        :return:
+        """
         for i in range(INTERACTIONS):
             random_point = self.random_state()
             neighbor = self.nearest_neighbor(random_point)
