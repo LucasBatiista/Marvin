@@ -8,6 +8,7 @@ INTERACTIONS = 1000
 class RRT:
     def __init__(self):
         self.start = [50, 50]
+        self.arrival = [88, 42]
         self.map_dimensions = [100, 100]
         self.states = []
         self.parents = [0]
@@ -37,10 +38,12 @@ class RRT:
         nearest_neighbor = self.states[state_parent_index]
         return nearest_neighbor
 
-    def normalize_vector(self, initial_point, final_point):
+    @staticmethod
+    def normalize_vector(initial_point, final_point):
         """
         Normalize a vector
-        :param initial_point, final_point:
+        :param final_point:
+        :param initial_point:
         :return:
         """
         vector = [final_point[0] - initial_point[0], final_point[1] - initial_point[1]]
@@ -57,6 +60,18 @@ class RRT:
         """
         new_point = [neighbor[0] + norm[0], neighbor[1] + norm[1]]
         self.states.append(new_point)
+
+    def is_in_arrival_region(self, point):
+        """
+        Verify if a certain point is at the arrival region
+        :param point:
+        :return:
+        """
+        circle_equation = math.pow(point[0] - self.arrival[0]) + math.pow(point[1] - self.arrival[1])
+        if circle_equation <= 1:
+            return True
+        else:
+            return False
 
     def generate_rrt(self):
         """
