@@ -1,6 +1,7 @@
 import random
 import math
 import matplotlib.pyplot as plt
+import datetime
 
 INTERACTIONS = 1000
 
@@ -13,6 +14,7 @@ class RRT:
         self.states = []
         self.parents = [0]
         self.states.append(self.start)
+        self.start_time = datetime.datetime.now()
 
     def random_state(self):
         """
@@ -60,6 +62,7 @@ class RRT:
         """
         new_point = [neighbor[0] + norm[0], neighbor[1] + norm[1]]
         self.states.append(new_point)
+        return new_point
 
     def is_in_arrival_region(self, point):
         """
@@ -67,7 +70,7 @@ class RRT:
         :param point:
         :return:
         """
-        circle_equation = math.pow(point[0] - self.arrival[0]) + math.pow(point[1] - self.arrival[1])
+        circle_equation = math.pow(point[0] - self.arrival[0], 2) + math.pow(point[1] - self.arrival[1], 2)
         if circle_equation <= 1:
             return True
         else:
@@ -78,13 +81,16 @@ class RRT:
         Generate a new set of points and plot them
         :return:
         """
-        for i in range(INTERACTIONS):
+        arrived = False
+        while arrived is False:
             random_point = self.random_state()
             neighbor = self.nearest_neighbor(random_point)
             norm = self.normalize_vector(neighbor, random_point)
-            self.new_state(neighbor, norm)
+            new_state = self.new_state(neighbor, norm)
+            arrived = self.is_in_arrival_region(new_state)
         print(self.states)
-        print(self.parents)
+        # print(self.parents)
+        print(f"Generation took: {datetime.datetime.now() - self.start_time}")
         x_points = [x[0] for x in self.states]
         y_points = [y[1] for y in self.states]
         plt.plot(x_points, y_points, 'o', scalex=100, scaley=100)
