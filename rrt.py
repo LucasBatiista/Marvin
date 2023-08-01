@@ -3,18 +3,17 @@ import math
 import matplotlib.pyplot as plt
 import datetime
 
-INTERACTIONS = 1000
-
 
 class RRT:
     def __init__(self):
-        self.start = [50, 50]
+        self.start = [50, 50, 0]
         self.arrival = [88, 42]
         self.map_dimensions = [100, 100]
         self.states = []
-        self.parents = [0]
         self.states.append(self.start)
-        self.start_time = datetime.datetime.now()
+        self.generation_start_time = datetime.datetime.now()
+        self.generation_finish_time = None
+        self.generate_rrt()
 
     def random_state(self):
         """
@@ -33,12 +32,13 @@ class RRT:
         distance_random_state = 1000
         state_parent_index = 0
         for i in range(len(self.states)):
-            if math.dist(random_point, self.states[i]) < distance_random_state:
-                distance_random_state = math.dist(random_point, self.states[i])
+            state_coordinates = [self.states[i][0], self.states[i][1]]
+            distance = math.dist(random_point, state_coordinates)
+            if distance < distance_random_state:
+                distance_random_state = distance
                 state_parent_index = i
-        self.parents.append(state_parent_index)
         nearest_neighbor = self.states[state_parent_index]
-        return nearest_neighbor
+        return nearest_neighbor, state_parent_index
 
     @staticmethod
     def normalize_vector(initial_point, final_point):
@@ -48,19 +48,23 @@ class RRT:
         :param initial_point:
         :return:
         """
-        vector = [final_point[0] - initial_point[0], final_point[1] - initial_point[1]]
-        vector_sqrt = math.sqrt(math.pow(vector[0], 2) + math.pow(vector[1], 2))
-        vector_normalized = [vector[0] / vector_sqrt, vector[1] / vector_sqrt]
-        return vector_normalized
+        try:
+            vector = [final_point[0] - initial_point[0], final_point[1] - initial_point[1]]
+            vector_sqrt = math.sqrt(math.pow(vector[0], 2) + math.pow(vector[1], 2))
+            vector_normalized = [vector[0] / vector_sqrt, vector[1] / vector_sqrt]
+            return vector_normalized
+        except ZeroDivisionError:
+            raise Exception
 
-    def new_state(self, neighbor, norm):
+    def new_state(self, neighbor, norm, neighbor_index):
         """
         Generate a new state based on a norm for two points
+        :param neighbor_index:
         :param neighbor:
         :param norm:
         :return:
         """
-        new_point = [neighbor[0] + norm[0], neighbor[1] + norm[1]]
+        new_point = [neighbor[0] + norm[0], neighbor[1] + norm[1], neighbor_index]
         self.states.append(new_point)
         return new_point
 
@@ -84,17 +88,35 @@ class RRT:
         arrived = False
         while arrived is False:
             random_point = self.random_state()
-            neighbor = self.nearest_neighbor(random_point)
+            neighbor, neighbor_index = self.nearest_neighbor(random_point)
             norm = self.normalize_vector(neighbor, random_point)
-            new_state = self.new_state(neighbor, norm)
+            new_state = self.new_state(neighbor, norm, neighbor_index)
             arrived = self.is_in_arrival_region(new_state)
-        print(self.states)
-        # print(self.parents)
-        print(f"Generation took: {datetime.datetime.now() - self.start_time}")
+        self.generation_finish_time = datetime.datetime.now()
+        print(f"Generation took: {self.generation_finish_time - self.generation_start_time}")
+        print(f"Nodes:{len(self.states)}")
         x_points = [x[0] for x in self.states]
         y_points = [y[1] for y in self.states]
         plt.plot(x_points, y_points, 'o', scalex=100, scaley=100)
-        plt.show()
+        plt.savefig('RRT_generation.png')
+
+    def get_path(self):
+        """
+            Get path from point A to B using RRT algorithm
+            """
+        final_point = [self.states[-1][0], self.states[-1][1]]
+        path_points = [final_point]
+        point_parent = self.states[-1][2]
+        while point_parent != 0:
+            point = self.states[point_parent]
+            point_parent = point[2]
+            path_points.append([point[0], point[1]])
+        print(f"Path has: {len(path_points)} nodes")
+        x_points = [x[0] for x in path_points]
+        y_points = [y[1] for y in path_points]
+        plt.plot(x_points, y_points, 'o', scalex=100, scaley=100)
+        plt.savefig('RRT_path.png')
 
 
-print(RRT().generate_rrt())
+rrt_graph = RRT()
+rrt_graph.get_path()
