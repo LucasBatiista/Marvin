@@ -45,7 +45,9 @@ def arm_and_takeoff(aTargetAltitude):
     #  after Vehicle.simple_takeoff will execute immediately).
     while True:
         print(" Altitude: ", vehicle.location.global_relative_frame.alt)
-        logging.info(" Altitude: ", vehicle.location.global_relative_frame.alt)
+        logging.info(f" Altitude: {vehicle.location.global_relative_frame.alt}")
+        print(f" GPS Location: {vehicle.gps_0}")
+        logging.info(f" GPS Location: {vehicle.gps_0}")
         # Break and return from function just below target altitude.
         if vehicle.location.global_relative_frame.alt >= aTargetAltitude * 0.95:
             print("Reached target altitude")
