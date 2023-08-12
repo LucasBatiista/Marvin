@@ -2,13 +2,16 @@ import random
 import math
 import matplotlib.pyplot as plt
 import datetime
-
+from geopy.distance import great_circle
 
 class RRT:
     def __init__(self):
-        self.start = [50, 50, 0]
-        self.arrival = [88, 42]
-        self.map_dimensions = [100, 100]
+        # self.start = [50, 50, 0]
+        self.start = [-3.072756, -59.990974, 0]
+        # self.arrival = [88, 42]
+        self.arrival = [-3.072650, -59.990975]
+        # self.map_dimensions = [[0, 0], [100, 100]]
+        self.map_dimensions = [[-3.072913, -59.991215], [-3.072578, -59.990712]]
         self.states = []
         self.states.append(self.start)
         self.generation_start_time = datetime.datetime.now()
@@ -20,7 +23,8 @@ class RRT:
         Generate a new state in a given dimensions for a space
         :return:
         """
-        random_point = [random.randint(0, self.map_dimensions[0]), random.randint(0, self.map_dimensions[1])]
+        random_point = [random.uniform(self.map_dimensions[0][0], self.map_dimensions[1][0]),
+                        random.uniform(self.map_dimensions[0][1], self.map_dimensions[1][1])]
         return random_point
 
     def nearest_neighbor(self, random_point):
@@ -50,7 +54,8 @@ class RRT:
         """
         try:
             vector = [final_point[0] - initial_point[0], final_point[1] - initial_point[1]]
-            vector_sqrt = math.sqrt(math.pow(vector[0], 2) + math.pow(vector[1], 2))
+            initial_point_coordinates = [initial_point[0], initial_point[1]]
+            vector_sqrt = great_circle(final_point, initial_point_coordinates).meters
             vector_normalized = [vector[0] / vector_sqrt, vector[1] / vector_sqrt]
             return vector_normalized
         except ZeroDivisionError:
@@ -74,8 +79,9 @@ class RRT:
         :param point:
         :return:
         """
-        circle_equation = math.pow(point[0] - self.arrival[0], 2) + math.pow(point[1] - self.arrival[1], 2)
-        if circle_equation <= 1:
+        node = [point[0], point[1]]
+        distance = great_circle(self.arrival, node).meters
+        if distance <= 1:
             return True
         else:
             return False
@@ -102,8 +108,8 @@ class RRT:
 
     def get_path(self):
         """
-            Get path from point A to B using RRT algorithm
-            """
+        Get path from point A to B using RRT algorithm
+        """
         final_point = [self.states[-1][0], self.states[-1][1]]
         path_points = [final_point]
         point_parent = self.states[-1][2]
