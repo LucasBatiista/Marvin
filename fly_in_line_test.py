@@ -1,5 +1,5 @@
 import time
-from dronekit import connect, VehicleMode
+from dronekit import connect, VehicleMode, LocationGlobalRelative
 from constants import PIXHAWK_ADDRESS
 import logging
 from datetime import datetime
@@ -7,14 +7,14 @@ from datetime import datetime
 today = f'{datetime.now().date()}_{datetime.now().hour}_{datetime.now().minute}'
 
 logging.basicConfig(format='[%(asctime)s] %(message)s', datefmt='%d-%m-%Y %H:%M:%S',
-                    filename=f'marvin_{today}.log', encoding='utf-8', level=logging.DEBUG)
+                    filename=f'fly_in_line_test_{today}.log', encoding='utf-8', level=logging.DEBUG)
 
 vehicle = connect(PIXHAWK_ADDRESS, wait_ready=True)
 
 
-def arm_and_takeoff(aTargetAltitude):
+def arm_and_takeoff(altitude):
     """
-    Arms vehicle and fly to aTargetAltitude.
+    Arms vehicle and fly to a certain altitude.
     """
 
     print("Basic pre-arm checks")
@@ -39,7 +39,7 @@ def arm_and_takeoff(aTargetAltitude):
 
     print("Taking off!")
     logging.info("Taking off!")
-    vehicle.simple_takeoff(aTargetAltitude)  # Take off to target altitude
+    vehicle.simple_takeoff(altitude)  # Take off to target altitude
 
     # Wait until the vehicle reaches a safe height before processing the goto (otherwise the command
     #  after Vehicle.simple_takeoff will execute immediately).
@@ -49,19 +49,32 @@ def arm_and_takeoff(aTargetAltitude):
         print(f" GPS Location: {vehicle.gps_0}")
         logging.info(f" GPS Location: {vehicle.gps_0}")
         # Break and return from function just below target altitude.
-        if vehicle.location.global_relative_frame.alt >= aTargetAltitude * 0.95:
+        if vehicle.location.global_relative_frame.alt >= altitude * 0.95:
             print("Reached target altitude")
             logging.info("Reached target altitude")
             break
         time.sleep(1)
-
-    # Attempt to Land
-    print("Preparing to LAND")
-    logging.info("Preparing to LAND")
-    vehicle.mode = VehicleMode("LAND")
 
     print("End of test")
     logging.info("End of test")
 
 
 arm_and_takeoff(2)
+
+time.sleep(5)
+print("Set default/target airspeed to 0.5")
+logging.info("Set default/target airspeed to 0.5")
+vehicle.airspeed = 0.5
+
+print("Going to location !")
+logging.info("Going to location !")
+destination = LocationGlobalRelative(-3.072670, -59.990967, 1)
+vehicle.simple_goto(destination)
+time.sleep(30)
+
+print("Preparing to LAND")
+logging.info("Preparing to LAND")
+vehicle.mode = VehicleMode("LAND")
+
+print("End of test")
+logging.info("End of test")

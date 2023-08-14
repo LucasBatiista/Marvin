@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 import datetime
 from geopy.distance import great_circle
 
+# TODO receive current geo location from drone and then generate path
+
+
 class RRT:
     def __init__(self):
         # self.start = [50, 50, 0]

@@ -1,9 +1,10 @@
 import time
 from dronekit import connect
+from constants import PIXHAWK_ADDRESS
 import logging
 
 logging.basicConfig(filename=f'collect_data.log', encoding='utf-8', level=logging.DEBUG)
-PIXHAWK_ADDRESS = '/dev/ttyACM0'
+
 vehicle = connect(PIXHAWK_ADDRESS, wait_ready=True)
 
 print("Collect data test start!")
