@@ -20,29 +20,36 @@ def arm_and_takeoff(altitude):
     """
 
     print("Basic pre-arm checks")
+    logging.info("Basic pre-arm checks")
     # Don't let the user try to arm until autopilot is ready
     while not vehicle.is_armable:
         print(" Waiting for vehicle to initialise...")
+        logging.info(" Waiting for vehicle to initialise...")
         time.sleep(1)
 
     print("Arming motors")
+    logging.info("Arming motors")
     # Copter should arm in GUIDED mode
     vehicle.mode = VehicleMode("GUIDED")
     vehicle.armed = True
 
     while not vehicle.armed:
         print(" Waiting for arming...")
+        logging.info(" Waiting for arming...")
         time.sleep(1)
 
     print("Taking off!")
+    logging.info("Taking off!")
     vehicle.simple_takeoff(altitude)  # Take off to target altitude
 
     # Wait until the vehicle reaches a safe height before processing the goto (otherwise the command
     #  after Vehicle.simple_takeoff will execute immediately).
     while True:
         print(" Altitude: ", vehicle.location.global_relative_frame.alt)
+        logging.info(" Altitude: ", vehicle.location.global_relative_frame.alt)
         if vehicle.location.global_relative_frame.alt >= altitude * 0.95:  # Trigger just below target alt.
             print("Reached target altitude")
+            logging.info("Reached target altitude")
             break
         time.sleep(1)
 
@@ -110,47 +117,59 @@ def goto_position_target_local_ned(north, east, down):
 
 """=====================================TEST CODE================================================================"""
 print("SQUARE path using SET_POSITION_TARGET_LOCAL_NED and position parameters")
+logging.info("SQUARE path using SET_POSITION_TARGET_LOCAL_NED and position parameters")
 ALTITUDE_CONSTANT = 2
 # Arm and take off to altitude of 2 meters
 arm_and_takeoff(ALTITUDE_CONSTANT)
 
 print("Set groundspeed to 1m/s.")
+logging.info("Set groundspeed to 1m/s.")
 vehicle.groundspeed = 1
 
 # Going to first point
 print("Going to first point")
+logging.info("Going to first point")
 goto_position_target_local_ned(2, 0, -ALTITUDE_CONSTANT)
 time.sleep(10)
 print("Turning 90 degrees")
+logging.info("Turning 90 degrees")
 condition_yaw(90, True)
 time.sleep(10)
 
 # Going to second point
 print("Going to second point")
+logging.info("Going to second point")
 goto_position_target_local_ned(2, 0, -ALTITUDE_CONSTANT)
 time.sleep(10)
 print("Turning 90 degrees")
+logging.info("Turning 90 degrees")
 condition_yaw(90, True)
 time.sleep(10)
 
 # Going to third point
 print("Going to third point")
+logging.info("Going to third point")
 goto_position_target_local_ned(2, 0, -ALTITUDE_CONSTANT)
 time.sleep(10)
 print("Turning 90 degrees")
+logging.info("Turning 90 degrees")
 condition_yaw(90, True)
 time.sleep(10)
 
 # Going to fourth point
 print("Going to fourth point")
+logging.info("Going to fourth point")
 goto_position_target_local_ned(2, 0, -ALTITUDE_CONSTANT)
 time.sleep(10)
 print("Turning 90 degrees")
+logging.info("Turning 90 degrees")
 condition_yaw(90, True)
 time.sleep(10)
 
 # TEST FINISHED PREPARING TO LAND
 print("TEST FINISHED PREPARING TO LAND !")
+logging.info("TEST FINISHED PREPARING TO LAND !")
 print("Setting LAND mode...")
+logging.info("Setting LAND mode...")
 vehicle.mode = VehicleMode("LAND")
 
