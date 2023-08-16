@@ -116,9 +116,10 @@ def goto_position_target_local_ned(north, east, down):
 
 
 """=====================================TEST CODE================================================================"""
+
 print("SQUARE path using SET_POSITION_TARGET_LOCAL_NED and position parameters")
 logging.info("SQUARE path using SET_POSITION_TARGET_LOCAL_NED and position parameters")
-ALTITUDE_CONSTANT = 2
+ALTITUDE_CONSTANT = int(2)
 # Arm and take off to altitude of 2 meters
 arm_and_takeoff(ALTITUDE_CONSTANT)
 
@@ -172,4 +173,3 @@ logging.info("TEST FINISHED PREPARING TO LAND !")
 print("Setting LAND mode...")
 logging.info("Setting LAND mode...")
 vehicle.mode = VehicleMode("LAND")
-

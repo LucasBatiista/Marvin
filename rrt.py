@@ -8,13 +8,10 @@ from geopy.distance import great_circle
 
 
 class RRT:
-    def __init__(self):
-        # self.start = [50, 50, 0]
-        self.start = [-3.072756, -59.990974, 0]
-        # self.arrival = [88, 42]
-        self.arrival = [-3.072650, -59.990975]
-        # self.map_dimensions = [[0, 0], [100, 100]]
-        self.map_dimensions = [[-3.072913, -59.991215], [-3.072578, -59.990712]]
+    def __init__(self, start, arrival):
+        self.start = start
+        self.arrival = arrival
+        self.map_dimensions = [[-3.072787, -59.991006], [-3.072635, -59.990953]]
         self.states = []
         self.states.append(self.start)
         self.generation_start_time = datetime.datetime.now()
@@ -104,8 +101,8 @@ class RRT:
         self.generation_finish_time = datetime.datetime.now()
         print(f"Generation took: {self.generation_finish_time - self.generation_start_time}")
         print(f"Nodes:{len(self.states)}")
-        x_points = [x[0] for x in self.states]
-        y_points = [y[1] for y in self.states]
+        x_points = [x[1] for x in self.states]
+        y_points = [y[0] for y in self.states]
         plt.plot(x_points, y_points, 'o', scalex=100, scaley=100)
         plt.savefig('RRT_generation.png')
 
@@ -120,12 +117,16 @@ class RRT:
             point = self.states[point_parent]
             point_parent = point[2]
             path_points.append([point[0], point[1]])
+        path_points.reverse()
         print(f"Path has: {len(path_points)} nodes")
-        x_points = [x[0] for x in path_points]
-        y_points = [y[1] for y in path_points]
-        plt.plot(x_points, y_points, 'o', scalex=100, scaley=100)
+        print(f"Path points: {path_points}")
+        x_points = [x[1] for x in path_points]
+        y_points = [y[0] for y in path_points]
+        plt.plot(x_points, y_points, 'bo', linestyle="--", scalex=100, scaley=100)
+        plt.plot(x_points[0], y_points[0], 'go')
+        plt.plot(x_points[-1], y_points[-1], 'ro')
         plt.savefig('RRT_path.png')
 
 
-rrt_graph = RRT()
+rrt_graph = RRT(start=[-3.072756, -59.990974, 0], arrival=[-3.072650, -59.990975])
 rrt_graph.get_path()
