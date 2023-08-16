@@ -7,7 +7,6 @@ from dronekit import connect
 vehicle = connect('/dev/serial/by-id/usb-ArduPilot_Pixhawk1_3F0049001451353430383030-if00', wait_ready=True)
 # Use returned Vehicle object to query device state - e.g. to get the mode:
 print("Mode: %s" % vehicle.mode.name)
-# vehicle is an instance of the Vehicle class
 print("Autopilot Firmware version: %s" % vehicle.version)
 print("Autopilot capabilities (supports ftp): %s" % vehicle.capabilities.ftp)
 print("Global Location: %s" % vehicle.location.global_frame)
