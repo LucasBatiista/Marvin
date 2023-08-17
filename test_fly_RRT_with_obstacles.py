@@ -3,22 +3,23 @@ import logging
 from guidance import Vant
 from rrt import RRT
 
-logging_filename = f'fly_RRT_no_obstacles.log'
+logging_filename = f'fly_RRT_with_obstacles.log'
 logging.basicConfig(format='[%(asctime)s][%(module)s] %(message)s', datefmt='%d-%m-%Y %H:%M:%S',
                     filename=logging_filename, encoding='utf-8', level=logging.DEBUG)
 
-# rrt = RRT(start=[-3.0727307, -59.9910685], arrival=[-3.072650, -59.990975], logging_file=logging_filename)
-
 """ Initializing vehicle connection"""
 vehicle = Vant(logging_filename)
+""" Getting first coordinates """
 start_latitude = vehicle.latitude
 start_longitude = vehicle.longitude
-print(start_latitude, start_longitude)
-rrt_graph = RRT(start=[-3.072756, -59.990974, 0], arrival=[-3.072650, -59.990975], logging_file=logging_filename)
+""" Calculating RRT path """
+rrt_graph = RRT(start=[start_latitude, start_longitude, 0], arrival=[-3.072650, -59.990975],
+                logging_file=logging_filename)
+
 path = rrt_graph.get_path()
 
 """ Start of test code """
-""" Description -> Test for RRT code with no obstacles """
+""" Description -> Test for RRT code with obstacles """
 
 """ Arm and Takeoff in guided mode"""
 vehicle.arm_and_takeoff()

@@ -68,6 +68,10 @@ class Vant:
     def longitude(self):
         return self.vehicle.location.global_frame.lon
 
+    @property
+    def lidar_distance(self):
+        return self.vehicle.rangefinder.distance
+
     def arm_and_takeoff(self):
         """
         Arms vehicle and fly to aTargetAltitude.
