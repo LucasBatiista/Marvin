@@ -7,4 +7,3 @@ logging.basicConfig(format='[%(asctime)s] %(message)s', datefmt='%d-%m-%Y %H:%M:
 
 vehicle = Vant(logging_filename)
 vehicle.collect_info()
-
