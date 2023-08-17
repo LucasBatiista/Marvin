@@ -6,10 +6,11 @@ from pymavlink import mavutil
 
 
 class Vant:
-    def __init__(self):
+    def __init__(self, logging_file):
         self.vehicle = connect(PIXHAWK_ADDRESS, wait_ready=True)
-        self.altitude = int(FLIGHT_ALTITUDE_METERS)
+        self.altitude = FLIGHT_ALTITUDE_METERS
         self.vehicle.groundspeed = 1  # m/s
+        self.logging = logging_file
 
     def collect_info(self):
         print("Mode: %s" % self.vehicle.mode.name)
@@ -35,6 +36,29 @@ class Vant:
         print("System status: %s" % self.vehicle.system_status.state)
         print("Mode: %s" % self.vehicle.mode.name)
         print("Armed: %s" % self.vehicle.armed)
+        logging.info("Mode: %s" % self.vehicle.mode.name)
+        logging.info("Autopilot Firmware version: %s" % self.vehicle.version)
+        logging.info("Autopilot capabilities (supports ftp): %s" % self.vehicle.capabilities.ftp)
+        logging.info("Global Location: %s" % self.vehicle.location.global_frame)
+        logging.info("Global Location (relative altitude): %s" % self.vehicle.location.global_relative_frame)
+        logging.info("Local Location: %s" % self.vehicle.location.local_frame)  # NED
+        logging.info("Attitude: %s" % self.vehicle.attitude)
+        logging.info("Velocity: %s" % self.vehicle.velocity)
+        logging.info("GPS: %s" % self.vehicle.gps_0)
+        logging.info("Groundspeed: %s" % self.vehicle.groundspeed)
+        logging.info("Airspeed: %s" % self.vehicle.airspeed)
+        logging.info("Gimbal status: %s" % self.vehicle.gimbal)
+        logging.info("Battery: %s" % self.vehicle.battery)
+        logging.info("EKF OK?: %s" % self.vehicle.ekf_ok)
+        logging.info("Last Heartbeat: %s" % self.vehicle.last_heartbeat)
+        logging.info("Rangefinder: %s" % self.vehicle.rangefinder)
+        logging.info("Rangefinder distance: %s" % self.vehicle.rangefinder.distance)
+        logging.info("Rangefinder voltage: %s" % self.vehicle.rangefinder.voltage)
+        logging.info("Heading: %s" % self.vehicle.heading)
+        logging.info("Is Armable?: %s" % self.vehicle.is_armable)
+        logging.info("System status: %s" % self.vehicle.system_status.state)
+        logging.info("Mode: %s" % self.vehicle.mode.name)
+        logging.info("Armed: %s" % self.vehicle.armed)
 
     def arm_and_takeoff(self):
         """
@@ -106,7 +130,7 @@ class Vant:
         # send command to vehicle
         self.vehicle.send_mavlink(msg)
 
-    def goto_position_target_local_ned(self, north, east, down):
+    def goto_position_target_local_ned(self, north, east):
         """
         Send SET_POSITION_TARGET_LOCAL_NED command to request the vehicle fly to a specified
         location in the North, East, Down frame.
@@ -122,6 +146,7 @@ class Vant:
         At time of writing, acceleration and yaw bits are ignored.
 
         """
+        down = -self.altitude
         msg = self.vehicle.message_factory.set_position_target_local_ned_encode(
             0,  # time_boot_ms (not used)
             0, 0,  # target system, target component
@@ -133,3 +158,8 @@ class Vant:
             0, 0)  # yaw, yaw_rate (not supported yet, ignored in GCS_Mavlink)
         # send command to vehicle
         self.vehicle.send_mavlink(msg)
+
+    def land(self):
+        print("Preparing to LAND")
+        logging.info("Preparing to LAND")
+        self.vehicle.mode = VehicleMode("LAND")
