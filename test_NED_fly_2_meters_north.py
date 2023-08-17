@@ -1,5 +1,5 @@
 import logging
-
+import time
 from guidance import Vant
 
 logging_filename = f'fly_2_meters_north.log'
@@ -17,6 +17,6 @@ vehicle.arm_and_takeoff()
 
 """ Move Vant in 2 meters north """
 vehicle.goto_position_target_local_ned(north=2, east=0)
-
+time.sleep(10)
 """ Land vehicle """
 vehicle.land()

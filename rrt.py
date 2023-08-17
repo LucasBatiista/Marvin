@@ -1,18 +1,18 @@
-import random
-import math
-# import matplotlib.pyplot as plt
 import datetime
-from geopy.distance import great_circle
+import math
+import random
+import csv
 
-# TODO receive current geo location from drone and then generate path
-# TODO guarantee that start is between map bounds
+from geopy.distance import great_circle
 
 
 class RRT:
-    def __init__(self, start, arrival, logging_file):
+    def __init__(self, start, arrival, logging_file, csv_filename):
         self.start = start
         self.arrival = arrival
         self.logging = logging_file
+        self.generation_csv_file = f'{csv_filename}_generation_states.csv'
+        self.path_csv_file = f'{csv_filename}_path_states.csv'
         self.map_dimensions = [[-3.072787, -59.991006], [-3.072635, -59.990953]]
         self.states = []
         self.states.append(self.start)
@@ -117,10 +117,10 @@ class RRT:
         self.generation_finish_time = datetime.datetime.now()
         print(f"Generation took: {self.generation_finish_time - self.generation_start_time}")
         print(f"Nodes:{len(self.states)}")
-        x_points = [x[1] for x in self.states]
-        y_points = [y[0] for y in self.states]
-        # plt.plot(x_points, y_points, 'o', scalex=100, scaley=100)
-        # plt.savefig('RRT_generation.png')
+        with open(self.generation_csv_file, 'w', newline='') as csvfile:
+            path_writer = csv.writer(csvfile, delimiter=',', quotechar=',', quoting=csv.QUOTE_MINIMAL)
+            for state in self.states:
+                path_writer.writerow(state)
 
     def get_path(self):
         """
@@ -136,10 +136,8 @@ class RRT:
         path_points.reverse()
         print(f"Path has: {len(path_points)} nodes")
         print(f"Path points: {path_points}")
-        x_points = [x[1] for x in path_points]
-        y_points = [y[0] for y in path_points]
-        # plt.plot(x_points, y_points, 'bo', linestyle="--", scalex=100, scaley=100)
-        # plt.plot(x_points[0], y_points[0], 'go')
-        # plt.plot(x_points[-1], y_points[-1], 'ro')
-        # plt.savefig('RRT_path.png')
+        with open(self.path_csv_file, 'w', newline='') as csvfile:
+            path_writer = csv.writer(csvfile, delimiter=',', quotechar=',', quoting=csv.QUOTE_MINIMAL)
+            for point in path_points:
+                path_writer.writerow(point)
         return path_points

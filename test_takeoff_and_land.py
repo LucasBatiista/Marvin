@@ -1,5 +1,5 @@
 import logging
-
+import time
 from guidance import Vant
 
 logging_filename = f'takeoff_and_land_test.log'
@@ -14,6 +14,6 @@ vehicle = Vant(logging_filename)
 
 """ Arm and Takeoff in guided mode"""
 vehicle.arm_and_takeoff()
-
+time.sleep(5)
 """ Land vehicle """
 vehicle.land()
