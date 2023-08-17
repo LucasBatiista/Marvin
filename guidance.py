@@ -60,6 +60,14 @@ class Vant:
         logging.info("Mode: %s" % self.vehicle.mode.name)
         logging.info("Armed: %s" % self.vehicle.armed)
 
+    @property
+    def latitude(self):
+        return self.vehicle.location.global_frame.lat
+
+    @property
+    def longitude(self):
+        return self.vehicle.location.global_frame.lon
+
     def arm_and_takeoff(self):
         """
         Arms vehicle and fly to aTargetAltitude.

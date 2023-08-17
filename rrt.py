@@ -5,18 +5,34 @@ import datetime
 from geopy.distance import great_circle
 
 # TODO receive current geo location from drone and then generate path
+# TODO guarantee that start is between map bounds
 
 
 class RRT:
-    def __init__(self, start, arrival):
+    def __init__(self, start, arrival, logging_file):
         self.start = start
         self.arrival = arrival
+        self.logging = logging_file
         self.map_dimensions = [[-3.072787, -59.991006], [-3.072635, -59.990953]]
         self.states = []
         self.states.append(self.start)
         self.generation_start_time = datetime.datetime.now()
         self.generation_finish_time = None
+        if not self.start_is_in_map():
+            raise Exception("Start point not in map!")
         self.generate_rrt()
+
+    def start_is_in_map(self):
+        """
+
+        :return:
+        """
+        latitude_in_map = self.map_dimensions[0][0] < self.start[0] < self.map_dimensions[1][0]
+        longitude_in_map = self.map_dimensions[0][1] < self.start[1] < self.map_dimensions[1][1]
+        if latitude_in_map and longitude_in_map:
+            return True
+        else:
+            return False
 
     def random_state(self):
         """
@@ -126,7 +142,4 @@ class RRT:
         plt.plot(x_points[0], y_points[0], 'go')
         plt.plot(x_points[-1], y_points[-1], 'ro')
         plt.savefig('RRT_path.png')
-
-
-rrt_graph = RRT(start=[-3.072756, -59.990974, 0], arrival=[-3.072650, -59.990975])
-rrt_graph.get_path()
+        return path_points
