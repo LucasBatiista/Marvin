@@ -104,7 +104,7 @@ class Vant:
         #  after Vehicle.simple_takeoff will execute immediately).
         while True:
             print(" Altitude: ", self.vehicle.location.global_relative_frame.alt)
-            logging.info(" Altitude: ", self.vehicle.location.global_relative_frame.alt)
+            logging.info(f" Altitude: {self.vehicle.location.global_relative_frame.alt}")
             if self.vehicle.location.global_relative_frame.alt >= self.altitude * 0.95:  # Trigger just below target alt.
                 print("Reached target altitude")
                 logging.info("Reached target altitude")
@@ -175,3 +175,6 @@ class Vant:
         print("Preparing to LAND")
         logging.info("Preparing to LAND")
         self.vehicle.mode = VehicleMode("LAND")
+
+    def get_heading(self, current_heading):
+        pass
