@@ -16,7 +16,7 @@ logging.basicConfig(format='[%(asctime)s][%(module)s] %(message)s', datefmt='%d-
 
 """ Initializing vehicle connection"""
 vehicle = Vant(logging_filename)
-rrt_graph = RRT(start=[vehicle.latitude, vehicle.longitude, 0], arrival=[-3.072764893793319,-59.99096969095618], logging_file=logging_filename,
+rrt_graph = RRT(start=[vehicle.latitude, vehicle.longitude, 0], arrival=[-3.072764893793319, -59.99096969095618], logging_file=logging_filename,
                 csv_filename='fly_RRT_with_obstacles_final')
 path = rrt_graph.get_path()
 
@@ -42,7 +42,7 @@ while len(path) != 0:
         start_time_rrt = datetime.datetime.now()
         print("OBSTACLE DETECTED !")
         logging.info("OBSTACLE DETECTED !")
-        rrt_graph = RRT(start=[vehicle.latitude, vehicle.longitude, 0], arrival=[-3.072764893793319,-59.99096969095618], logging_file=logging_filename,
+        rrt_graph = RRT(start=[vehicle.latitude, vehicle.longitude, 0], arrival=[-3.072764893793319, -59.99096969095618], logging_file=logging_filename,
                         csv_filename=f'fly_RRT_with_obstacles_final{csv_file_counter}')
         path = rrt_graph.get_path()
         finish_time_rrt = datetime.datetime.now()
