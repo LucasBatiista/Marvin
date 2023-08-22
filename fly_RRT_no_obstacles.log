@@ -1,0 +1,483 @@
+[19-08-2023 17:25:03][__init__] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 17:25:03][__init__] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 17:25:03][__init__] Frame: QUAD
+[19-08-2023 17:25:03][guidance] Basic pre-arm checks
+[19-08-2023 17:25:03][guidance] Arming motors
+[19-08-2023 17:25:03][guidance]  Waiting for arming...
+[19-08-2023 17:25:03][__init__] Arming motors
+[19-08-2023 17:25:04][guidance] Taking off!
+[19-08-2023 17:25:04][guidance]  Altitude: 0.0
+[19-08-2023 17:25:05][guidance]  Altitude: 0.0
+[19-08-2023 17:25:06][__init__] Potential Thrust Loss (2)
+[19-08-2023 17:25:06][guidance]  Altitude: 0.062
+[19-08-2023 17:25:07][guidance]  Altitude: 1.082
+[19-08-2023 17:25:08][guidance]  Altitude: 1.492
+[19-08-2023 17:25:08][guidance] Reached target altitude
+[19-08-2023 17:25:08][test_fly_RRT_no_obstacles] Going to 0 path point Lat:-3.072761729488244 Long:-59.990971171368784
+[19-08-2023 17:25:08][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727709, Long -59.9909726
+[19-08-2023 17:25:11][__init__] EKF2 IMU0 in-flight yaw alignment complete
+[19-08-2023 17:25:11][__init__] EKF2 IMU1 in-flight yaw alignment complete
+[19-08-2023 17:25:13][test_fly_RRT_no_obstacles] Going to 1 path point Lat:-3.0727527540885644 Long:-59.99097060495109
+[19-08-2023 17:25:13][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727619, Long -59.9909688
+[19-08-2023 17:25:18][test_fly_RRT_no_obstacles] Going to 2 path point Lat:-3.0727438525182356 Long:-59.990971887322836
+[19-08-2023 17:25:18][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727529, Long -59.9909693
+[19-08-2023 17:25:23][test_fly_RRT_no_obstacles] Going to 3 path point Lat:-3.072735931986053 Long:-59.99096762174461
+[19-08-2023 17:25:23][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727439, Long -59.990969
+[19-08-2023 17:25:28][test_fly_RRT_no_obstacles] Going to 4 path point Lat:-3.0727282321074902 Long:-59.99097227489288
+[19-08-2023 17:25:28][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727361, Long -59.9909689
+[19-08-2023 17:25:33][test_fly_RRT_no_obstacles] Going to 5 path point Lat:-3.0727201192023847 Long:-59.99097616100531
+[19-08-2023 17:25:33][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727284, Long -59.9909691
+[19-08-2023 17:25:38][test_fly_RRT_no_obstacles] Going to 6 path point Lat:-3.0727111559894147 Long:-59.99097689590094
+[19-08-2023 17:25:38][test_fly_RRT_no_obstacles] Actual location: Lat -3.07272, Long -59.9909755
+[19-08-2023 17:25:43][test_fly_RRT_no_obstacles] Going to 7 path point Lat:-3.072702167957681 Long:-59.990977201286114
+[19-08-2023 17:25:43][test_fly_RRT_no_obstacles] Actual location: Lat -3.072711, Long -59.9909749
+[19-08-2023 17:25:48][test_fly_RRT_no_obstacles] Going to 8 path point Lat:-3.0726940614920712 Long:-59.99098110085203
+[19-08-2023 17:25:48][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727024, Long -59.9909751
+[19-08-2023 17:25:53][test_fly_RRT_no_obstacles] Going to 9 path point Lat:-3.0726893272261684 Long:-59.99097344363969
+[19-08-2023 17:25:53][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726942, Long -59.9909818
+[19-08-2023 17:25:58][test_fly_RRT_no_obstacles] Going to 10 path point Lat:-3.0726813112997555 Long:-59.99096936068383
+[19-08-2023 17:25:58][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726892, Long -59.9909747
+[19-08-2023 17:26:03][test_fly_RRT_no_obstacles] Going to 11 path point Lat:-3.0726723823786664 Long:-59.990968285791055
+[19-08-2023 17:26:03][test_fly_RRT_no_obstacles] Actual location: Lat -3.072682, Long -59.9909694
+[19-08-2023 17:26:08][test_fly_RRT_no_obstacles] Going to 12 path point Lat:-3.07266338969559 Long:-59.990968382665386
+[19-08-2023 17:26:08][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726732, Long -59.9909694
+[19-08-2023 17:26:13][test_fly_RRT_no_obstacles] Going to 13 path point Lat:-3.072655686795371 Long:-59.9909637345356
+[19-08-2023 17:26:13][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726641, Long -59.9909689
+[19-08-2023 17:26:18][test_fly_RRT_no_obstacles] Going to 14 path point Lat:-3.0726466940442565 Long:-59.990963644217196
+[19-08-2023 17:26:18][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726563, Long -59.9909621
+[19-08-2023 17:26:23][test_fly_RRT_no_obstacles] Going to 15 path point Lat:-3.0726453936805567 Long:-59.99097255572293
+[19-08-2023 17:26:23][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726474, Long -59.9909628
+[19-08-2023 18:05:52][__init__] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 18:05:52][__init__] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 18:05:52][__init__] Frame: QUAD
+[19-08-2023 18:05:53][guidance] Basic pre-arm checks
+[19-08-2023 18:05:53][guidance] Arming motors
+[19-08-2023 18:05:53][guidance]  Waiting for arming...
+[19-08-2023 18:05:53][__init__] Arming motors
+[19-08-2023 18:05:54][guidance] Taking off!
+[19-08-2023 18:05:54][guidance]  Altitude: 0.007
+[19-08-2023 18:05:55][guidance]  Altitude: 0.007
+[19-08-2023 18:05:56][guidance]  Altitude: 0.007
+[19-08-2023 18:05:57][guidance]  Altitude: 0.885
+[19-08-2023 18:05:58][guidance]  Altitude: 1.444
+[19-08-2023 18:05:58][guidance] Reached target altitude
+[19-08-2023 18:06:21][__init__] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 18:06:21][__init__] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 18:06:21][__init__] Frame: QUAD
+[19-08-2023 18:06:22][guidance] Basic pre-arm checks
+[19-08-2023 18:06:22][guidance] Arming motors
+[19-08-2023 18:06:22][guidance] Taking off!
+[19-08-2023 18:06:22][guidance]  Altitude: 1.634
+[19-08-2023 18:06:22][guidance] Reached target altitude
+[19-08-2023 18:06:42][__init__] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 18:06:42][__init__] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 18:06:42][__init__] Frame: QUAD
+[19-08-2023 18:06:43][guidance] Basic pre-arm checks
+[19-08-2023 18:06:43][guidance] Arming motors
+[19-08-2023 18:06:43][guidance]  Waiting for arming...
+[19-08-2023 18:06:43][__init__] Arming motors
+[19-08-2023 18:06:44][guidance] Taking off!
+[19-08-2023 18:06:44][guidance]  Altitude: 0.007
+[19-08-2023 18:06:45][guidance]  Altitude: 0.005
+[19-08-2023 18:06:46][guidance]  Altitude: 0.038
+[19-08-2023 18:06:47][guidance]  Altitude: 1.016
+[19-08-2023 18:06:48][guidance]  Altitude: 1.468
+[19-08-2023 18:06:48][guidance] Reached target altitude
+[19-08-2023 18:07:13][__init__] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 18:07:13][__init__] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 18:07:13][__init__] Frame: QUAD
+[19-08-2023 18:07:14][guidance] Basic pre-arm checks
+[19-08-2023 18:07:14][guidance] Arming motors
+[19-08-2023 18:07:14][guidance]  Waiting for arming...
+[19-08-2023 18:07:14][__init__] Arming motors
+[19-08-2023 18:07:15][guidance] Taking off!
+[19-08-2023 18:07:15][guidance]  Altitude: 0.003
+[19-08-2023 18:07:16][guidance]  Altitude: 0.001
+[19-08-2023 18:07:17][guidance]  Altitude: 0.025
+[19-08-2023 18:07:18][guidance]  Altitude: 0.987
+[19-08-2023 18:07:19][guidance]  Altitude: 1.454
+[19-08-2023 18:07:19][guidance] Reached target altitude
+[19-08-2023 18:07:19][test_fly_RRT_with_obstacles] Going to path point Lat:-3.07276623331142 Long:-59.990967208932204
+[19-08-2023 18:07:19][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727772, Long -59.9909663
+[19-08-2023 18:07:21][__init__] EKF2 IMU0 in-flight yaw alignment complete
+[19-08-2023 18:07:21][__init__] EKF2 IMU1 in-flight yaw alignment complete
+[19-08-2023 18:07:24][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072762030110142 Long:-59.99095924696264
+[19-08-2023 18:07:24][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727668, Long -59.990969
+[19-08-2023 18:07:29][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727536284309505 Long:-59.990962459304974
+[19-08-2023 18:07:29][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727627, Long -59.9909554
+[19-08-2023 18:07:34][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072746864906738 Long:-59.9909683951019
+[19-08-2023 18:07:34][test_fly_RRT_with_obstacles] Actual location: Lat -3.072754, Long -59.9909634
+[19-08-2023 18:07:39][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072739010408794 Long:-59.99097278142737
+[19-08-2023 18:07:39][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727467, Long -59.9909687
+[19-08-2023 18:07:44][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072731122905267 Long:-59.99096845490684
+[19-08-2023 18:07:44][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727392, Long -59.9909747
+[19-08-2023 18:07:49][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727221305342973 Long:-59.99096833237495
+[19-08-2023 18:07:49][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727311, Long -59.9909681
+[19-08-2023 18:07:54][test_fly_RRT_with_obstacles] Going to path point Lat:-3.07271317906162 Long:-59.99096919897829
+[19-08-2023 18:07:54][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727231, Long -59.9909692
+[19-08-2023 18:07:59][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727043780400307 Long:-59.99096734706587
+[19-08-2023 18:07:59][test_fly_RRT_with_obstacles] Actual location: Lat -3.072714, Long -59.9909686
+[19-08-2023 18:08:04][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072696822292194 Long:-59.99097223142132
+[19-08-2023 18:08:04][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727052, Long -59.9909685
+[19-08-2023 18:08:09][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072689228580581 Long:-59.99097705637105
+[19-08-2023 18:08:09][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726978, Long -59.9909686
+[19-08-2023 18:08:14][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0726847262881303 Long:-59.99096926010842
+[19-08-2023 18:08:14][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726895, Long -59.9909748
+[19-08-2023 18:08:19][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072677962582108 Long:-59.99096332451953
+[19-08-2023 18:08:19][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726848, Long -59.9909679
+[19-08-2023 18:08:24][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0726689950046984 Long:-59.99096400392238
+[19-08-2023 18:08:24][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726789, Long -59.9909628
+[19-08-2023 18:08:29][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072660775208353 Long:-59.990967657826445
+[19-08-2023 18:08:29][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726703, Long -59.9909628
+[19-08-2023 18:08:34][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0726562904775805 Long:-59.9909754642334
+[19-08-2023 18:08:34][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726613, Long -59.9909685
+[19-08-2023 18:08:39][guidance] Preparing to LAND
+[19-08-2023 18:10:43][__init__] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 18:10:43][__init__] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 18:10:43][__init__] Frame: QUAD
+[19-08-2023 18:10:44][guidance] Basic pre-arm checks
+[19-08-2023 18:10:44][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:45][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:46][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:47][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:48][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:49][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:50][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:51][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:52][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:53][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:54][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:55][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:56][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:57][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:58][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:10:59][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:11:00][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:11:01][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:11:02][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:11:03][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:11:04][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:11:04][__init__] EKF2 IMU0 is using GPS
+[19-08-2023 18:11:04][__init__] EKF2 IMU1 is using GPS
+[19-08-2023 18:11:05][guidance] Arming motors
+[19-08-2023 18:11:05][guidance]  Waiting for arming...
+[19-08-2023 18:11:05][__init__] Arming motors
+[19-08-2023 18:11:06][guidance] Taking off!
+[19-08-2023 18:11:06][guidance]  Altitude: 0.004
+[19-08-2023 18:11:07][guidance]  Altitude: 0.004
+[19-08-2023 18:11:08][guidance]  Altitude: 0.016
+[19-08-2023 18:11:09][guidance]  Altitude: 0.947
+[19-08-2023 18:11:10][guidance]  Altitude: 1.463
+[19-08-2023 18:11:10][guidance] Reached target altitude
+[19-08-2023 18:11:10][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072764408327042 Long:-59.99097416554657
+[19-08-2023 18:11:10][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727726, Long -59.9909715
+[19-08-2023 18:11:12][__init__] EKF2 IMU0 in-flight yaw alignment complete
+[19-08-2023 18:11:12][__init__] EKF2 IMU1 in-flight yaw alignment complete
+[19-08-2023 18:11:15][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727558945471527 Long:-59.99097706682986
+[19-08-2023 18:11:15][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727638, Long -59.9909764
+[19-08-2023 18:11:20][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727471467855616 Long:-59.99097915654789
+[19-08-2023 18:11:20][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727552, Long -59.9909761
+[19-08-2023 18:11:25][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072740121828126 Long:-59.99098477958359
+[19-08-2023 18:11:25][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727466, Long -59.9909763
+[19-08-2023 18:11:30][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727314353990094 Long:-59.99098244735622
+[19-08-2023 18:11:30][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727396, Long -59.99099
+[19-08-2023 18:11:35][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727226923413458 Long:-59.99098455672435
+[19-08-2023 18:11:35][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727308, Long -59.9909823
+[19-08-2023 18:11:40][guidance] Preparing to LAND
+[19-08-2023 18:14:09][__init__] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 18:14:09][__init__] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 18:14:09][__init__] Frame: QUAD
+[19-08-2023 18:14:10][guidance] Basic pre-arm checks
+[19-08-2023 18:14:10][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:11][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:12][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:13][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:14][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:15][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:16][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:17][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:18][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:19][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:20][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:21][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:22][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:23][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:24][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:25][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:26][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:27][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:28][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:29][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:30][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:31][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:32][guidance]  Waiting for vehicle to initialise...
+[19-08-2023 18:14:32][__init__] EKF2 IMU0 is using GPS
+[19-08-2023 18:14:32][__init__] EKF2 IMU1 is using GPS
+[19-08-2023 18:14:33][guidance] Arming motors
+[19-08-2023 18:14:33][guidance]  Waiting for arming...
+[19-08-2023 18:14:33][__init__] Arming motors
+[19-08-2023 18:14:34][guidance] Taking off!
+[19-08-2023 18:14:34][guidance]  Altitude: 0.004
+[19-08-2023 18:14:35][guidance]  Altitude: 0.004
+[19-08-2023 18:14:36][guidance]  Altitude: 0.006
+[19-08-2023 18:14:37][guidance]  Altitude: 0.889
+[19-08-2023 18:14:38][guidance]  Altitude: 1.453
+[19-08-2023 18:14:38][guidance] Reached target altitude
+[19-08-2023 18:14:38][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072763971110364 Long:-59.99097227515481
+[19-08-2023 18:14:38][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727726, Long -59.9909715
+[19-08-2023 18:14:40][__init__] EKF2 IMU0 in-flight yaw alignment complete
+[19-08-2023 18:14:40][__init__] EKF2 IMU1 in-flight yaw alignment complete
+[19-08-2023 18:14:43][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072755376581233 Long:-59.990974926943004
+[19-08-2023 18:14:43][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727634, Long -59.9909697
+[19-08-2023 18:14:48][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727464228698302 Long:-59.99097577003317
+[19-08-2023 18:14:48][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727548, Long -59.9909767
+[19-08-2023 18:14:53][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072737497655848 Long:-59.99097466469499
+[19-08-2023 18:14:53][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727461, Long -59.9909761
+[19-08-2023 18:14:58][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072728556357596 Long:-59.99097563091162
+[19-08-2023 18:14:58][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727366, Long -59.9909762
+[19-08-2023 18:15:03][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072721947933596 Long:-59.99098173940181
+[19-08-2023 18:15:03][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727278, Long -59.9909763
+[19-08-2023 18:15:08][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727038097101955 Long:-59.99098195673411
+[19-08-2023 18:15:08][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727215, Long -59.9909831
+[19-08-2023 18:15:13][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0726954153766517 Long:-59.99097872519019
+[19-08-2023 18:15:13][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727025, Long -59.9909826
+[19-08-2023 18:15:18][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0726875066142383 Long:-59.990974437766745
+[19-08-2023 18:15:18][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726947, Long -59.9909758
+[19-08-2023 18:15:23][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0726812541742055 Long:-59.99096796435158
+[19-08-2023 18:15:23][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726864, Long -59.9909763
+[19-08-2023 18:15:28][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072673400313201 Long:-59.990963576882706
+[19-08-2023 18:15:28][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726804, Long -59.9909694
+[19-08-2023 18:15:33][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072667249967702 Long:-59.99097014765191
+[19-08-2023 18:15:33][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726723, Long -59.9909628
+[19-08-2023 18:15:38][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0726590482287373 Long:-59.99096645327791
+[19-08-2023 18:15:38][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726665, Long -59.9909702
+[19-08-2023 18:15:43][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072653564302038 Long:-59.99097359125
+[19-08-2023 18:15:43][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726584, Long -59.9909702
+[19-08-2023 18:15:48][guidance] Preparing to LAND
+[20-08-2023 19:58:42][__init__] ArduCopter V4.0.4 (40502bd9)
+[20-08-2023 19:58:42][__init__] fa520c9732e24cab920e5fe4420d378f
+[20-08-2023 19:58:42][__init__] Frame: QUAD
+[20-08-2023 19:58:42][guidance] Basic pre-arm checks
+[20-08-2023 19:58:42][guidance] Arming motors
+[20-08-2023 19:58:42][guidance]  Waiting for arming...
+[20-08-2023 19:58:42][__init__] Arming motors
+[20-08-2023 19:58:43][guidance] Taking off!
+[20-08-2023 19:58:43][guidance]  Altitude: 0.002
+[20-08-2023 19:58:44][guidance]  Altitude: 0.002
+[20-08-2023 19:58:45][guidance]  Altitude: 0.004
+[20-08-2023 19:58:46][guidance]  Altitude: 1.069
+[20-08-2023 19:58:47][guidance]  Altitude: 1.926
+[20-08-2023 19:58:47][guidance] Reached target altitude
+[20-08-2023 19:58:47][test_fly_RRT_no_obstacles] Going to 0 path point Lat:-3.072764315492793 Long:-59.9909705040362
+[20-08-2023 19:58:47][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727719, Long -59.990972
+[20-08-2023 19:58:49][__init__] EKF2 IMU0 in-flight yaw alignment complete
+[20-08-2023 19:58:49][__init__] EKF2 IMU1 in-flight yaw alignment complete
+[20-08-2023 19:58:52][test_fly_RRT_no_obstacles] Going to 1 path point Lat:-3.072755449493704 Long:-59.990972013444406
+[20-08-2023 19:58:52][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727634, Long -59.99097
+[20-08-2023 19:58:57][test_fly_RRT_no_obstacles] Going to 2 path point Lat:-3.0727559011810386 Long:-59.99096301865925
+[20-08-2023 19:58:57][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727544, Long -59.9909701
+[20-08-2023 19:59:02][test_fly_RRT_no_obstacles] Going to 3 path point Lat:-3.0727469245331607 Long:-59.99096247243883
+[20-08-2023 19:59:02][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727554, Long -59.9909633
+[20-08-2023 19:59:07][test_fly_RRT_no_obstacles] Going to 4 path point Lat:-3.072738775444175 Long:-59.990966281868296
+[20-08-2023 19:59:07][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727461, Long -59.9909628
+[20-08-2023 19:59:12][test_fly_RRT_no_obstacles] Going to 5 path point Lat:-3.072729783502607 Long:-59.99096613100803
+[20-08-2023 19:59:12][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727379, Long -59.9909706
+[20-08-2023 19:59:17][test_fly_RRT_no_obstacles] Going to 6 path point Lat:-3.072721577157564 Long:-59.9909698151098
+[20-08-2023 19:59:17][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727289, Long -59.9909702
+[20-08-2023 19:59:22][test_fly_RRT_no_obstacles] Going to 7 path point Lat:-3.0727128362098743 Long:-59.990971933229446
+[20-08-2023 19:59:22][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727202, Long -59.9909702
+[20-08-2023 19:59:27][test_fly_RRT_no_obstacles] Going to 8 path point Lat:-3.0727061637781095 Long:-59.99097797153424
+[20-08-2023 19:59:27][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727117, Long -59.9909704
+[20-08-2023 19:59:32][test_fly_RRT_no_obstacles] Going to 9 path point Lat:-3.072697174429188 Long:-59.99097823518607
+[20-08-2023 19:59:32][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727056, Long -59.9909773
+[20-08-2023 19:59:37][test_fly_RRT_no_obstacles] Going to 10 path point Lat:-3.072688542316651 Long:-59.99097570878969
+[20-08-2023 19:59:37][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726967, Long -59.9909767
+[20-08-2023 19:59:42][test_fly_RRT_no_obstacles] Going to 11 path point Lat:-3.0726865026213805 Long:-59.99098448024417
+[20-08-2023 19:59:42][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726876, Long -59.9909767
+[20-08-2023 19:59:47][test_fly_RRT_no_obstacles] Going to 12 path point Lat:-3.072679696441742 Long:-59.99099036694038
+[20-08-2023 19:59:47][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726857, Long -59.9909903
+[20-08-2023 19:59:52][test_fly_RRT_no_obstacles] Going to 13 path point Lat:-3.0726727941934344 Long:-59.99098459351445
+[20-08-2023 19:59:52][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726797, Long -59.9909896
+[20-08-2023 19:59:57][test_fly_RRT_no_obstacles] Going to 14 path point Lat:-3.0726655001265684 Long:-59.990989861724614
+[20-08-2023 19:59:57][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726718, Long -59.9909893
+[20-08-2023 20:00:02][test_fly_RRT_no_obstacles] Going to 15 path point Lat:-3.072657781247445 Long:-59.99098524025541
+[20-08-2023 20:00:02][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726639, Long -59.9909892
+[20-08-2023 20:00:07][test_fly_RRT_no_obstacles] Going to 16 path point Lat:-3.0726488241400314 Long:-59.99098443415346
+[20-08-2023 20:00:07][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726565, Long -59.9909893
+[20-08-2023 20:00:12][test_fly_RRT_no_obstacles] Going to 17 path point Lat:-3.072642923253102 Long:-59.990977637834426
+[20-08-2023 20:00:12][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726471, Long -59.9909891
+[20-08-2023 20:00:17][guidance] Preparing to LAND
+[20-08-2023 20:15:13][__init__] ArduCopter V4.0.4 (40502bd9)
+[20-08-2023 20:15:13][__init__] fa520c9732e24cab920e5fe4420d378f
+[20-08-2023 20:15:13][__init__] Frame: QUAD
+[20-08-2023 20:15:14][guidance] Basic pre-arm checks
+[20-08-2023 20:15:14][guidance] Arming motors
+[20-08-2023 20:15:14][guidance]  Waiting for arming...
+[20-08-2023 20:15:14][__init__] Arming motors
+[20-08-2023 20:15:15][guidance] Taking off!
+[20-08-2023 20:15:15][guidance]  Altitude: 0.002
+[20-08-2023 20:15:16][guidance]  Altitude: 0.003
+[20-08-2023 20:15:17][guidance]  Altitude: 0.007
+[20-08-2023 20:15:18][guidance]  Altitude: 1.069
+[20-08-2023 20:15:19][guidance]  Altitude: 1.859
+[20-08-2023 20:15:20][guidance]  Altitude: 2.036
+[20-08-2023 20:15:20][guidance] Reached target altitude
+[20-08-2023 20:15:20][test_fly_RRT_no_obstacles] Going to 0 path point Lat:-3.072765321528782 Long:-59.99096968470969
+[20-08-2023 20:15:20][test_fly_RRT_no_obstacles] Actual location: Lat -3.072769, Long -59.9909742
+[20-08-2023 20:15:21][__init__] EKF2 IMU0 in-flight yaw alignment complete
+[20-08-2023 20:15:21][__init__] EKF2 IMU1 in-flight yaw alignment complete
+[20-08-2023 20:15:25][test_fly_RRT_no_obstacles] Going to 1 path point Lat:-3.072756331133562 Long:-59.99096945966326
+[20-08-2023 20:15:25][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727633, Long -59.9909704
+[20-08-2023 20:15:30][test_fly_RRT_no_obstacles] Going to 2 path point Lat:-3.072750976022102 Long:-59.990976695056226
+[20-08-2023 20:15:30][test_fly_RRT_no_obstacles] Actual location: Lat -3.072754, Long -59.9909698
+[20-08-2023 20:15:35][test_fly_RRT_no_obstacles] Going to 3 path point Lat:-3.0727441244479374 Long:-59.990970861410496
+[20-08-2023 20:15:35][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727496, Long -59.9909775
+[20-08-2023 20:15:40][test_fly_RRT_no_obstacles] Going to 4 path point Lat:-3.0727351728631866 Long:-59.990971726852045
+[20-08-2023 20:15:40][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727438, Long -59.9909708
+[20-08-2023 20:15:45][test_fly_RRT_no_obstacles] Going to 5 path point Lat:-3.072726251004486 Long:-59.99097285903002
+[20-08-2023 20:15:45][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727331, Long -59.9909701
+[20-08-2023 20:15:50][test_fly_RRT_no_obstacles] Going to 6 path point Lat:-3.0727207175462707 Long:-59.99097995856322
+[20-08-2023 20:15:50][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727245, Long -59.9909777
+[20-08-2023 20:15:55][test_fly_RRT_no_obstacles] Going to 7 path point Lat:-3.0727128499608916 Long:-59.99098432130275
+[20-08-2023 20:15:55][test_fly_RRT_no_obstacles] Actual location: Lat -3.07272, Long -59.9909776
+[20-08-2023 20:16:00][test_fly_RRT_no_obstacles] Going to 8 path point Lat:-3.0727043210918654 Long:-59.990987177794324
+[20-08-2023 20:16:00][test_fly_RRT_no_obstacles] Actual location: Lat -3.072712, Long -59.9909913
+[20-08-2023 20:16:05][test_fly_RRT_no_obstacles] Going to 9 path point Lat:-3.0726960128830307 Long:-59.99098373025567
+[20-08-2023 20:16:05][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727037, Long -59.99099
+[20-08-2023 20:16:10][test_fly_RRT_no_obstacles] Going to 10 path point Lat:-3.0726870223141964 Long:-59.990983948235346
+[20-08-2023 20:16:10][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726945, Long -59.9909822
+[20-08-2023 20:16:15][test_fly_RRT_no_obstacles] Going to 11 path point Lat:-3.0726785200652724 Long:-59.99098101323613
+[20-08-2023 20:16:15][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726852, Long -59.9909827
+[20-08-2023 20:16:20][test_fly_RRT_no_obstacles] Going to 12 path point Lat:-3.072672177738344 Long:-59.99097462811779
+[20-08-2023 20:16:20][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726773, Long -59.9909831
+[20-08-2023 20:16:25][test_fly_RRT_no_obstacles] Going to 13 path point Lat:-3.072663902564194 Long:-59.99097815443705
+[20-08-2023 20:16:25][test_fly_RRT_no_obstacles] Actual location: Lat -3.072671, Long -59.9909758
+[20-08-2023 20:16:30][test_fly_RRT_no_obstacles] Going to 14 path point Lat:-3.072657733253338 Long:-59.9909847073515
+[20-08-2023 20:16:30][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726624, Long -59.9909759
+[20-08-2023 20:16:35][test_fly_RRT_no_obstacles] Going to 15 path point Lat:-3.0726596212930852 Long:-59.99097590191063
+[20-08-2023 20:16:35][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726572, Long -59.9909904
+[20-08-2023 20:16:40][test_fly_RRT_no_obstacles] Going to 16 path point Lat:-3.0726536415800343 Long:-59.99096917504267
+[20-08-2023 20:16:40][test_fly_RRT_no_obstacles] Actual location: Lat -3.07266, Long -59.9909758
+[20-08-2023 20:16:45][guidance] Preparing to LAND
+[20-08-2023 20:18:08][__init__] ArduCopter V4.0.4 (40502bd9)
+[20-08-2023 20:18:08][__init__] fa520c9732e24cab920e5fe4420d378f
+[20-08-2023 20:18:08][__init__] Frame: QUAD
+[20-08-2023 20:18:09][guidance] Basic pre-arm checks
+[20-08-2023 20:18:09][guidance] Arming motors
+[20-08-2023 20:18:09][guidance]  Waiting for arming...
+[20-08-2023 20:18:09][__init__] PreArm: Need 3D Fix
+[20-08-2023 20:18:09][__init__] PreArm: Need 3D Fix
+[20-08-2023 20:18:10][guidance]  Waiting for arming...
+[20-08-2023 20:18:11][guidance]  Waiting for arming...
+[20-08-2023 20:18:12][guidance]  Waiting for arming...
+[20-08-2023 20:18:13][guidance]  Waiting for arming...
+[20-08-2023 20:18:14][guidance]  Waiting for arming...
+[20-08-2023 20:18:15][guidance]  Waiting for arming...
+[20-08-2023 20:18:16][guidance]  Waiting for arming...
+[20-08-2023 20:18:17][guidance]  Waiting for arming...
+[20-08-2023 20:18:18][guidance]  Waiting for arming...
+[20-08-2023 20:18:19][guidance]  Waiting for arming...
+[20-08-2023 20:18:20][guidance]  Waiting for arming...
+[20-08-2023 20:18:21][guidance]  Waiting for arming...
+[20-08-2023 20:18:22][guidance]  Waiting for arming...
+[20-08-2023 20:18:23][guidance]  Waiting for arming...
+[20-08-2023 20:18:24][guidance]  Waiting for arming...
+[20-08-2023 20:18:25][guidance]  Waiting for arming...
+[20-08-2023 20:18:26][guidance]  Waiting for arming...
+[20-08-2023 20:18:27][guidance]  Waiting for arming...
+[20-08-2023 20:18:28][guidance]  Waiting for arming...
+[20-08-2023 20:18:29][guidance]  Waiting for arming...
+[20-08-2023 20:18:30][guidance]  Waiting for arming...
+[20-08-2023 20:18:31][guidance]  Waiting for arming...
+[20-08-2023 20:18:32][__init__] EKF2 IMU0 is using GPS
+[20-08-2023 20:18:32][__init__] EKF2 IMU1 is using GPS
+[20-08-2023 20:18:32][guidance]  Waiting for arming...
+[20-08-2023 20:18:33][guidance]  Waiting for arming...
+[20-08-2023 20:18:34][guidance]  Waiting for arming...
+[20-08-2023 20:18:35][guidance]  Waiting for arming...
+[20-08-2023 20:18:36][guidance]  Waiting for arming...
+[20-08-2023 20:18:37][guidance]  Waiting for arming...
+[20-08-2023 20:18:38][guidance]  Waiting for arming...
+[20-08-2023 20:18:39][guidance]  Waiting for arming...
+[20-08-2023 20:18:40][guidance]  Waiting for arming...
+[20-08-2023 20:18:41][guidance]  Waiting for arming...
+[20-08-2023 20:18:42][guidance]  Waiting for arming...
+[20-08-2023 20:18:43][guidance]  Waiting for arming...
+[20-08-2023 20:18:44][guidance]  Waiting for arming...
+[20-08-2023 20:18:45][guidance]  Waiting for arming...
+[20-08-2023 20:18:46][guidance]  Waiting for arming...
+[20-08-2023 20:18:47][guidance]  Waiting for arming...
+[20-08-2023 20:18:48][guidance]  Waiting for arming...
+[20-08-2023 20:18:49][guidance]  Waiting for arming...
+[20-08-2023 20:18:50][guidance]  Waiting for arming...
+[20-08-2023 20:18:51][guidance]  Waiting for arming...
+[20-08-2023 20:18:52][guidance]  Waiting for arming...
+[20-08-2023 20:18:53][guidance]  Waiting for arming...
+[20-08-2023 20:18:54][guidance]  Waiting for arming...
+[20-08-2023 20:18:55][guidance]  Waiting for arming...
+[20-08-2023 20:18:56][guidance]  Waiting for arming...
+[20-08-2023 20:18:57][guidance]  Waiting for arming...
+[20-08-2023 20:18:58][guidance]  Waiting for arming...
+[20-08-2023 20:18:59][guidance]  Waiting for arming...
+[20-08-2023 20:19:00][guidance]  Waiting for arming...
+[20-08-2023 20:19:01][guidance]  Waiting for arming...
+[20-08-2023 20:19:02][guidance]  Waiting for arming...
+[20-08-2023 20:19:03][guidance]  Waiting for arming...
+[20-08-2023 20:19:04][guidance]  Waiting for arming...
+[20-08-2023 20:19:05][guidance]  Waiting for arming...
+[20-08-2023 20:19:06][guidance]  Waiting for arming...
+[20-08-2023 20:19:07][guidance]  Waiting for arming...
+[20-08-2023 20:19:08][guidance]  Waiting for arming...
+[20-08-2023 20:19:09][guidance]  Waiting for arming...
+[20-08-2023 20:19:10][guidance]  Waiting for arming...
+[20-08-2023 20:19:11][guidance]  Waiting for arming...
+[20-08-2023 20:19:12][guidance]  Waiting for arming...
+[20-08-2023 20:19:13][guidance]  Waiting for arming...
+[20-08-2023 20:19:14][guidance]  Waiting for arming...
+[20-08-2023 20:19:17][__init__] ArduCopter V4.0.4 (40502bd9)
+[20-08-2023 20:19:17][__init__] fa520c9732e24cab920e5fe4420d378f
+[20-08-2023 20:19:17][__init__] Frame: QUAD
+[20-08-2023 20:19:17][guidance] Basic pre-arm checks
+[20-08-2023 20:19:17][guidance] Arming motors
+[20-08-2023 20:19:17][guidance]  Waiting for arming...
+[20-08-2023 20:19:17][__init__] Arming motors
+[20-08-2023 20:19:18][guidance] Taking off!
+[20-08-2023 20:19:18][guidance]  Altitude: 0.001
+[20-08-2023 20:19:19][guidance]  Altitude: 0.001
+[20-08-2023 20:19:20][guidance]  Altitude: 0.03
+[20-08-2023 20:19:21][guidance]  Altitude: 1.21
+[20-08-2023 20:19:22][guidance]  Altitude: 1.97
+[20-08-2023 20:19:22][guidance] Reached target altitude
+[20-08-2023 20:19:22][test_fly_RRT_no_obstacles] Going to 0 path point Lat:-3.0727643308338974 Long:-59.990972390631995
+[20-08-2023 20:19:22][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727719, Long -59.990972
+[20-08-2023 20:19:24][__init__] EKF2 IMU0 in-flight yaw alignment complete
+[20-08-2023 20:19:24][__init__] EKF2 IMU1 in-flight yaw alignment complete
+[20-08-2023 20:19:27][test_fly_RRT_no_obstacles] Going to 1 path point Lat:-3.072755692850658 Long:-59.99097489682423
+[20-08-2023 20:19:27][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727636, Long -59.9909701
+[20-08-2023 20:19:32][test_fly_RRT_no_obstacles] Going to 2 path point Lat:-3.0727468378635088 Long:-59.990976469725325
+[20-08-2023 20:19:32][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727549, Long -59.9909769
+[20-08-2023 20:19:37][test_fly_RRT_no_obstacles] Going to 3 path point Lat:-3.0727384105535402 Long:-59.990973325434965
+[20-08-2023 20:19:37][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727461, Long -59.9909764
+[20-08-2023 20:19:42][test_fly_RRT_no_obstacles] Going to 4 path point Lat:-3.0727297224814145 Long:-59.99097099935328
+[20-08-2023 20:19:42][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727375, Long -59.9909763
+[20-08-2023 20:19:47][test_fly_RRT_no_obstacles] Going to 5 path point Lat:-3.0727222600488173 Long:-59.990976025524056
+[20-08-2023 20:19:47][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727287, Long -59.9909695
+[20-08-2023 20:19:52][test_fly_RRT_no_obstacles] Going to 6 path point Lat:-3.072713376007104 Long:-59.99097742449967
+[20-08-2023 20:19:52][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727212, Long -59.9909766
+[20-08-2023 20:19:57][test_fly_RRT_no_obstacles] Going to 7 path point Lat:-3.0727046488629335 Long:-59.990975250046496
+[20-08-2023 20:19:57][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727128, Long -59.9909765
+[20-08-2023 20:20:02][test_fly_RRT_no_obstacles] Going to 8 path point Lat:-3.072695854649631 Long:-59.99097336597689
+[20-08-2023 20:20:02][test_fly_RRT_no_obstacles] Actual location: Lat -3.0727036, Long -59.9909765
+[20-08-2023 20:20:07][test_fly_RRT_no_obstacles] Going to 9 path point Lat:-3.072686861799209 Long:-59.99097344576512
+[20-08-2023 20:20:07][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726949, Long -59.9909764
+[20-08-2023 20:20:12][test_fly_RRT_no_obstacles] Going to 10 path point Lat:-3.072683880002086 Long:-59.99096494905845
+[20-08-2023 20:20:12][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726857, Long -59.9909763
+[20-08-2023 20:20:17][test_fly_RRT_no_obstacles] Going to 11 path point Lat:-3.0726749824296156 Long:-59.99096363915742
+[20-08-2023 20:20:17][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726829, Long -59.9909695
+[20-08-2023 20:20:22][test_fly_RRT_no_obstacles] Going to 12 path point Lat:-3.072666218017041 Long:-59.9909616206219
+[20-08-2023 20:20:22][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726736, Long -59.9909626
+[20-08-2023 20:20:27][test_fly_RRT_no_obstacles] Going to 13 path point Lat:-3.0726609644417877 Long:-59.990968930284836
+[20-08-2023 20:20:27][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726648, Long -59.9909636
+[20-08-2023 20:20:32][test_fly_RRT_no_obstacles] Going to 14 path point Lat:-3.0726520347289323 Long:-59.99096786200873
+[20-08-2023 20:20:32][test_fly_RRT_no_obstacles] Actual location: Lat -3.0726602, Long -59.9909707
+[20-08-2023 20:20:37][guidance] Preparing to LAND

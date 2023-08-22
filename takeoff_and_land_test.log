@@ -1,0 +1,475 @@
+[19-08-2023 11:15:11] Initializing vehicle connection
+[19-08-2023 11:15:11] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 11:15:11] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 11:15:11] Frame: QUAD
+[19-08-2023 11:15:12] Start of test code
+[19-08-2023 11:15:12] Description -> Takeoff and Land
+[19-08-2023 11:15:12] Arm and Takeoff in guided mode
+[19-08-2023 11:15:12] Basic pre-arm checks
+[19-08-2023 11:15:12] Arming motors
+[19-08-2023 11:15:12]  Waiting for arming...
+[19-08-2023 11:15:12] Arming motors
+[19-08-2023 11:15:13] Taking off!
+[19-08-2023 11:15:13]  Altitude: 0.001
+[19-08-2023 11:15:14]  Altitude: 0.001
+[19-08-2023 11:15:15]  Altitude: 0.01
+[19-08-2023 11:15:16]  Altitude: 0.944
+[19-08-2023 11:15:17]  Altitude: 1.431
+[19-08-2023 11:15:17] Reached target altitude
+[19-08-2023 11:15:17] Sleeping for 5 seconds
+[19-08-2023 11:15:22] Land vehicle
+[19-08-2023 11:15:22] Preparing to LAND
+[19-08-2023 11:16:53] Initializing vehicle connection
+[19-08-2023 11:16:54] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 11:16:54] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 11:16:54] Frame: QUAD
+[19-08-2023 11:16:55] Start of test code
+[19-08-2023 11:16:55] Description -> Takeoff and Land
+[19-08-2023 11:16:55] Arm and Takeoff in guided mode
+[19-08-2023 11:16:55] Basic pre-arm checks
+[19-08-2023 11:16:55] Arming motors
+[19-08-2023 11:16:55]  Waiting for arming...
+[19-08-2023 11:16:55] Arming motors
+[19-08-2023 11:16:56] Taking off!
+[19-08-2023 11:16:56]  Altitude: 0.005
+[19-08-2023 11:16:57]  Altitude: 0.005
+[19-08-2023 11:16:58]  Altitude: 0.037
+[19-08-2023 11:16:59]  Altitude: 1.015
+[19-08-2023 11:17:00]  Altitude: 1.44
+[19-08-2023 11:17:00] Reached target altitude
+[19-08-2023 11:17:00] Sleeping for 5 seconds
+[19-08-2023 11:17:05] Land vehicle
+[19-08-2023 11:17:05] Preparing to LAND
+[19-08-2023 11:37:45] Initializing vehicle connection
+[19-08-2023 11:37:45] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 11:37:45] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 11:37:45] Frame: QUAD
+[19-08-2023 11:37:45] Start of test code
+[19-08-2023 11:37:45] Description -> Takeoff and Land
+[19-08-2023 11:37:45] Arm and Takeoff in guided mode
+[19-08-2023 11:37:45] Basic pre-arm checks
+[19-08-2023 11:37:45] Arming motors
+[19-08-2023 11:37:45]  Waiting for arming...
+[19-08-2023 11:37:45] Arming motors
+[19-08-2023 11:37:46] Taking off!
+[19-08-2023 11:37:46]  Altitude: 0.005
+[19-08-2023 11:37:47]  Altitude: 0.005
+[19-08-2023 11:37:48]  Altitude: 0.037
+[19-08-2023 11:37:49]  Altitude: 1.031
+[19-08-2023 11:37:50]  Altitude: 1.478
+[19-08-2023 11:37:50] Reached target altitude
+[19-08-2023 11:37:50] Sleeping for 5 seconds
+[19-08-2023 11:37:50] Land vehicle
+[19-08-2023 11:37:50] Preparing to LAND
+[19-08-2023 14:42:39] Initializing vehicle connection
+[19-08-2023 14:42:39] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 14:42:39] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 14:42:39] Frame: QUAD
+[19-08-2023 14:42:40] Start of test code
+[19-08-2023 14:42:40] Description -> Takeoff and Land
+[19-08-2023 14:42:40] Arm and Takeoff in guided mode
+[19-08-2023 14:42:40] Basic pre-arm checks
+[19-08-2023 14:42:40] Arming motors
+[19-08-2023 14:42:40] Taking off!
+[19-08-2023 14:42:40]  Altitude: 2.003
+[19-08-2023 14:42:40] Reached target altitude
+[19-08-2023 14:42:40] Sleeping for 5 seconds
+[19-08-2023 14:42:40] Land vehicle
+[19-08-2023 14:42:40] Preparing to LAND
+[19-08-2023 14:42:54] Initializing vehicle connection
+[19-08-2023 14:42:54] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 14:42:54] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 14:42:54] Frame: QUAD
+[19-08-2023 14:42:55] Start of test code
+[19-08-2023 14:42:55] Description -> Takeoff and Land
+[19-08-2023 14:42:55] Arm and Takeoff in guided mode
+[19-08-2023 14:42:55] Basic pre-arm checks
+[19-08-2023 14:42:55] Arming motors
+[19-08-2023 14:42:55]  Waiting for arming...
+[19-08-2023 14:42:55] Arming motors
+[19-08-2023 14:42:56] Taking off!
+[19-08-2023 14:42:56]  Altitude: 0.001
+[19-08-2023 14:42:57]  Altitude: 0.001
+[19-08-2023 14:42:58]  Altitude: 0.051
+[19-08-2023 14:42:59]  Altitude: 1.026
+[19-08-2023 14:43:00]  Altitude: 1.457
+[19-08-2023 14:43:00] Reached target altitude
+[19-08-2023 14:43:00] Sleeping for 5 seconds
+[19-08-2023 14:43:00] Land vehicle
+[19-08-2023 14:43:00] Preparing to LAND
+[19-08-2023 14:49:16] Initializing vehicle connection
+[19-08-2023 14:49:17] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 14:49:17] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 14:49:17] Frame: QUAD
+[19-08-2023 14:49:17] Start of test code
+[19-08-2023 14:49:17] Description -> Takeoff and Land
+[19-08-2023 14:49:17] Arm and Takeoff in guided mode
+[19-08-2023 14:49:17] Basic pre-arm checks
+[19-08-2023 14:49:17] Arming motors
+[19-08-2023 14:49:17]  Waiting for arming...
+[19-08-2023 14:49:17] Arming motors
+[19-08-2023 14:49:18] Taking off!
+[19-08-2023 14:49:18]  Altitude: 0.002
+[19-08-2023 14:49:19]  Altitude: 0.003
+[19-08-2023 14:49:20]  Altitude: 0.016
+[19-08-2023 14:49:21]  Altitude: 0.973
+[19-08-2023 14:49:22]  Altitude: 1.479
+[19-08-2023 14:49:22] Reached target altitude
+[19-08-2023 14:51:19] Initializing vehicle connection
+[19-08-2023 14:51:19] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 14:51:19] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 14:51:19] Frame: QUAD
+[19-08-2023 14:51:19] Start of test code
+[19-08-2023 14:51:19] Description -> Takeoff and Land
+[19-08-2023 14:51:19] Arm and Takeoff in guided mode
+[19-08-2023 14:51:19] Basic pre-arm checks
+[19-08-2023 14:51:19] Arming motors
+[19-08-2023 14:51:19]  Waiting for arming...
+[19-08-2023 14:51:19] Arming motors
+[19-08-2023 14:51:20] Taking off!
+[19-08-2023 14:51:20]  Altitude: 0.01
+[19-08-2023 14:51:21]  Altitude: 0.01
+[19-08-2023 14:51:22]  Altitude: 0.031
+[19-08-2023 14:51:23]  Altitude: 0.97
+[19-08-2023 14:51:24]  Altitude: 1.448
+[19-08-2023 14:51:24] Reached target altitude
+[19-08-2023 14:51:59] Initializing vehicle connection
+[19-08-2023 14:51:59] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 14:51:59] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 14:51:59] Frame: QUAD
+[19-08-2023 14:51:59] Start of test code
+[19-08-2023 14:51:59] Description -> Takeoff and Land
+[19-08-2023 14:51:59] Arm and Takeoff in guided mode
+[19-08-2023 14:51:59] Basic pre-arm checks
+[19-08-2023 14:51:59] Arming motors
+[19-08-2023 14:51:59]  Waiting for arming...
+[19-08-2023 14:51:59] Arming motors
+[19-08-2023 14:52:00] Taking off!
+[19-08-2023 14:52:00]  Altitude: 0.008
+[19-08-2023 14:52:01]  Altitude: 0.008
+[19-08-2023 14:52:02]  Altitude: 0.042
+[19-08-2023 14:52:03]  Altitude: 1.01
+[19-08-2023 14:52:04]  Altitude: 1.463
+[19-08-2023 14:52:04] Reached target altitude
+[19-08-2023 14:55:31] Initializing vehicle connection
+[19-08-2023 14:55:31] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 14:55:31] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 14:55:31] Frame: QUAD
+[19-08-2023 14:55:32] Start of test code
+[19-08-2023 14:55:32] Description -> Takeoff and Land
+[19-08-2023 14:55:32] Arm and Takeoff in guided mode
+[19-08-2023 14:55:32] Basic pre-arm checks
+[19-08-2023 14:55:32] Arming motors
+[19-08-2023 14:55:32] Taking off!
+[19-08-2023 14:55:32]  Altitude: 1.625
+[19-08-2023 14:55:32] Reached target altitude
+[19-08-2023 14:58:10] Initializing vehicle connection
+[19-08-2023 14:58:11] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 14:58:11] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 14:58:11] Frame: QUAD
+[19-08-2023 14:58:12] Start of test code
+[19-08-2023 14:58:12] Description -> Takeoff and Land
+[19-08-2023 14:58:12] Arm and Takeoff in guided mode
+[19-08-2023 14:58:12] Basic pre-arm checks
+[19-08-2023 14:58:12] Arming motors
+[19-08-2023 14:58:12] Taking off!
+[19-08-2023 14:58:12]  Altitude: 1.619
+[19-08-2023 14:58:12] Reached target altitude
+[19-08-2023 14:58:39] Initializing vehicle connection
+[19-08-2023 14:58:39] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 14:58:39] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 14:58:39] Frame: QUAD
+[19-08-2023 14:58:40] Start of test code
+[19-08-2023 14:58:40] Description -> Takeoff and Land
+[19-08-2023 14:58:40] Arm and Takeoff in guided mode
+[19-08-2023 14:58:40] Basic pre-arm checks
+[19-08-2023 14:58:40] Arming motors
+[19-08-2023 14:58:40] Taking off!
+[19-08-2023 14:58:40]  Altitude: 1.624
+[19-08-2023 14:58:40] Reached target altitude
+[19-08-2023 15:01:39] Initializing vehicle connection
+[19-08-2023 15:01:40] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 15:01:40] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 15:01:40] Frame: QUAD
+[19-08-2023 15:01:40] Start of test code
+[19-08-2023 15:01:40] Description -> Takeoff and Land
+[19-08-2023 15:01:40] Arm and Takeoff in guided mode
+[19-08-2023 15:01:40] Basic pre-arm checks
+[19-08-2023 15:01:40] Arming motors
+[19-08-2023 15:01:40]  Waiting for arming...
+[19-08-2023 15:01:40] Arming motors
+[19-08-2023 15:01:41] Taking off!
+[19-08-2023 15:01:41]  Altitude: 0.001
+[19-08-2023 15:01:42]  Altitude: 0.001
+[19-08-2023 15:01:43]  Altitude: 0.034
+[19-08-2023 15:01:44]  Altitude: 1.003
+[19-08-2023 15:01:45]  Altitude: 1.465
+[19-08-2023 15:01:45] Reached target altitude
+[19-08-2023 15:03:46] Initializing vehicle connection
+[19-08-2023 15:03:46] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 15:03:46] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 15:03:46] Frame: QUAD
+[19-08-2023 15:03:46] Start of test code
+[19-08-2023 15:03:46] Description -> Takeoff and Land
+[19-08-2023 15:03:46] Arm and Takeoff in guided mode
+[19-08-2023 15:03:46] Basic pre-arm checks
+[19-08-2023 15:03:46] Arming motors
+[19-08-2023 15:03:46]  Waiting for arming...
+[19-08-2023 15:03:46] Arming motors
+[19-08-2023 15:03:47] Taking off!
+[19-08-2023 15:03:47]  Altitude: 0.004
+[19-08-2023 15:03:48]  Altitude: 0.004
+[19-08-2023 15:03:49]  Altitude: 0.045
+[19-08-2023 15:03:50]  Altitude: 1.009
+[19-08-2023 15:03:51]  Altitude: 1.446
+[19-08-2023 15:03:51] Reached target altitude
+[19-08-2023 15:03:51] Sleeping for 5 seconds
+[19-08-2023 15:03:55] EKF2 IMU0 in-flight yaw alignment complete
+[19-08-2023 15:03:55] EKF2 IMU1 in-flight yaw alignment complete
+[19-08-2023 15:06:30] Initializing vehicle connection
+[19-08-2023 15:06:30] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 15:06:30] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 15:06:30] Frame: QUAD
+[19-08-2023 15:06:30] Start of test code
+[19-08-2023 15:06:30] Description -> Takeoff and Land
+[19-08-2023 15:06:30] Arm and Takeoff in guided mode
+[19-08-2023 15:06:30] Basic pre-arm checks
+[19-08-2023 15:06:30] Arming motors
+[19-08-2023 15:06:30]  Waiting for arming...
+[19-08-2023 15:06:31] Arming motors
+[19-08-2023 15:06:31] Taking off!
+[19-08-2023 15:06:31]  Altitude: 0.004
+[19-08-2023 15:06:32]  Altitude: 0.004
+[19-08-2023 15:06:33]  Altitude: 0.045
+[19-08-2023 15:06:34]  Altitude: 1.027
+[19-08-2023 15:06:35]  Altitude: 1.475
+[19-08-2023 15:06:36] Reached target altitude
+[19-08-2023 15:06:36] Sleeping for 5 seconds
+[19-08-2023 15:06:39] EKF2 IMU0 in-flight yaw alignment complete
+[19-08-2023 15:06:39] EKF2 IMU1 in-flight yaw alignment complete
+[19-08-2023 15:08:18] Initializing vehicle connection
+[19-08-2023 15:08:18] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 15:08:18] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 15:08:18] Frame: QUAD
+[19-08-2023 15:08:19] Start of test code
+[19-08-2023 15:08:19] Description -> Takeoff and Land
+[19-08-2023 15:08:19] Arm and Takeoff in guided mode
+[19-08-2023 15:08:19] Basic pre-arm checks
+[19-08-2023 15:08:19] Arming motors
+[19-08-2023 15:08:19]  Waiting for arming...
+[19-08-2023 15:08:19] Arming motors
+[19-08-2023 15:08:20] Taking off!
+[19-08-2023 15:08:20]  Altitude: 0.001
+[19-08-2023 15:08:21]  Altitude: 0.001
+[19-08-2023 15:08:22]  Altitude: 0.026
+[19-08-2023 15:08:23]  Altitude: 1.004
+[19-08-2023 15:08:24]  Altitude: 1.476
+[19-08-2023 15:08:24] Reached target altitude
+[19-08-2023 15:08:24] Sleeping for 5 seconds
+[19-08-2023 15:08:27] EKF2 IMU0 in-flight yaw alignment complete
+[19-08-2023 15:08:27] EKF2 IMU1 in-flight yaw alignment complete
+[19-08-2023 15:11:08] Initializing vehicle connection
+[19-08-2023 15:11:09] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 15:11:09] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 15:11:09] Frame: QUAD
+[19-08-2023 15:11:10] Start of test code
+[19-08-2023 15:11:10] Description -> Takeoff and Land
+[19-08-2023 15:11:10] Arm and Takeoff in guided mode
+[19-08-2023 15:11:10] Basic pre-arm checks
+[19-08-2023 15:11:10] Arming motors
+[19-08-2023 15:11:10]  Waiting for arming...
+[19-08-2023 15:11:10] Arming motors
+[19-08-2023 15:11:11] Taking off!
+[19-08-2023 15:11:11]  Altitude: -0.009
+[19-08-2023 15:11:12]  Altitude: -0.009
+[19-08-2023 15:11:12] Potential Thrust Loss (4)
+[19-08-2023 15:11:13]  Altitude: 0.044
+[19-08-2023 15:11:14]  Altitude: 1.046
+[19-08-2023 15:11:15]  Altitude: 1.482
+[19-08-2023 15:11:15] Reached target altitude
+[19-08-2023 15:11:18] EKF2 IMU0 in-flight yaw alignment complete
+[19-08-2023 15:11:18] EKF2 IMU1 in-flight yaw alignment complete
+[19-08-2023 15:12:15] Sleeping for 5 seconds
+[19-08-2023 15:20:05] Initializing vehicle connection
+[19-08-2023 15:20:05] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 15:20:05] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 15:20:05] Frame: QUAD
+[19-08-2023 15:20:05] Start of test code
+[19-08-2023 15:20:05] Description -> Takeoff and Land
+[19-08-2023 15:20:05] Arm and Takeoff in guided mode
+[19-08-2023 15:20:05] Basic pre-arm checks
+[19-08-2023 15:20:05] Arming motors
+[19-08-2023 15:20:05]  Waiting for arming...
+[19-08-2023 15:20:05] Arming motors
+[19-08-2023 15:20:06] Taking off!
+[19-08-2023 15:20:06]  Altitude: 0.007
+[19-08-2023 15:20:07]  Altitude: 0.007
+[19-08-2023 15:20:08] Potential Thrust Loss (4)
+[19-08-2023 15:20:08]  Altitude: 0.009
+[19-08-2023 15:20:09]  Altitude: 0.914
+[19-08-2023 15:20:10]  Altitude: 1.461
+[19-08-2023 15:20:10] Reached target altitude
+[19-08-2023 15:20:14] EKF2 IMU0 in-flight yaw alignment complete
+[19-08-2023 15:20:14] EKF2 IMU1 in-flight yaw alignment complete
+[19-08-2023 15:21:10] Sleeping for 5 seconds
+[19-08-2023 15:23:47] Initializing vehicle connection
+[19-08-2023 15:23:47] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 15:23:47] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 15:23:47] Frame: QUAD
+[19-08-2023 15:23:48] Start of test code
+[19-08-2023 15:23:48] Description -> Takeoff and Land
+[19-08-2023 15:23:48] Arm and Takeoff in guided mode
+[19-08-2023 15:23:48] Basic pre-arm checks
+[19-08-2023 15:23:48] Arming motors
+[19-08-2023 15:23:48]  Waiting for arming...
+[19-08-2023 15:23:48] Arming motors
+[19-08-2023 15:23:49] Taking off!
+[19-08-2023 15:23:49]  Altitude: 0.006
+[19-08-2023 15:23:50]  Altitude: 0.006
+[19-08-2023 15:23:50] Potential Thrust Loss (4)
+[19-08-2023 15:23:51]  Altitude: 0.007
+[19-08-2023 15:23:52]  Altitude: 0.894
+[19-08-2023 15:23:53]  Altitude: 1.45
+[19-08-2023 15:23:53] Reached target altitude
+[19-08-2023 15:23:56] EKF2 IMU0 in-flight yaw alignment complete
+[19-08-2023 15:23:56] EKF2 IMU1 in-flight yaw alignment complete
+[19-08-2023 15:24:53] Sleeping for 5 seconds
+[19-08-2023 17:41:33] Initializing vehicle connection
+[19-08-2023 17:41:33] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 17:41:33] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 17:41:33] Frame: QUAD
+[19-08-2023 17:41:33] Start of test code
+[19-08-2023 17:41:33] Description -> Takeoff and Land
+[19-08-2023 17:41:33] Arm and Takeoff in guided mode
+[19-08-2023 17:41:33] Basic pre-arm checks
+[19-08-2023 17:41:33] Arming motors
+[19-08-2023 17:41:33]  Waiting for arming...
+[19-08-2023 17:41:33] Arming motors
+[19-08-2023 17:41:34] Taking off!
+[19-08-2023 17:41:34]  Altitude: 0.008
+[19-08-2023 17:41:35]  Altitude: 0.008
+[19-08-2023 17:41:36]  Altitude: 0.009
+[19-08-2023 17:41:37]  Altitude: 0.893
+[19-08-2023 17:41:38]  Altitude: 1.443
+[19-08-2023 17:41:38] Reached target altitude
+[19-08-2023 17:44:17] Initializing vehicle connection
+[19-08-2023 17:44:17] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 17:44:17] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 17:44:17] Frame: QUAD
+[19-08-2023 17:44:18] Start of test code
+[19-08-2023 17:44:18] Description -> Takeoff and Land
+[19-08-2023 17:44:18] Arm and Takeoff in guided mode
+[19-08-2023 17:44:18] Basic pre-arm checks
+[19-08-2023 17:44:18] Arming motors
+[19-08-2023 17:44:18]  Waiting for arming...
+[19-08-2023 17:44:18] Arming motors
+[19-08-2023 17:44:19] Taking off!
+[19-08-2023 17:44:19]  Altitude: -0.001
+[19-08-2023 17:44:20]  Altitude: -0.003
+[19-08-2023 17:44:21]  Altitude: 0.027
+[19-08-2023 17:44:22]  Altitude: 0.993
+[19-08-2023 17:44:23]  Altitude: 1.448
+[19-08-2023 17:44:23] Reached target altitude
+[19-08-2023 17:44:23] Sleeping for 5 seconds
+[19-08-2023 17:44:23] Land vehicle
+[19-08-2023 17:44:23] Preparing to LAND
+[19-08-2023 17:44:50] Initializing vehicle connection
+[19-08-2023 17:44:50] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 17:44:50] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 17:44:50] Frame: QUAD
+[19-08-2023 17:44:51] Start of test code
+[19-08-2023 17:44:51] Description -> Takeoff and Land
+[19-08-2023 17:44:51] Arm and Takeoff in guided mode
+[19-08-2023 17:44:51] Basic pre-arm checks
+[19-08-2023 17:44:51] Arming motors
+[19-08-2023 17:44:51]  Waiting for arming...
+[19-08-2023 17:44:51] Arming motors
+[19-08-2023 17:44:52] Taking off!
+[19-08-2023 17:44:52]  Altitude: 0.0
+[19-08-2023 17:44:53]  Altitude: 0.0
+[19-08-2023 17:44:53] Potential Thrust Loss (4)
+[19-08-2023 17:44:54]  Altitude: 0.023
+[19-08-2023 17:44:55]  Altitude: 1.016
+[19-08-2023 17:44:56]  Altitude: 1.494
+[19-08-2023 17:44:56] Reached target altitude
+[19-08-2023 17:45:01] Sleeping for 5 seconds
+[19-08-2023 17:45:01] Land vehicle
+[19-08-2023 17:45:01] Preparing to LAND
+[19-08-2023 17:45:37] Initializing vehicle connection
+[19-08-2023 17:45:38] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 17:45:38] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 17:45:38] Frame: QUAD
+[19-08-2023 17:45:39] Start of test code
+[19-08-2023 17:45:39] Description -> Takeoff and Land
+[19-08-2023 17:45:39] Arm and Takeoff in guided mode
+[19-08-2023 17:45:39] Basic pre-arm checks
+[19-08-2023 17:45:39] Arming motors
+[19-08-2023 17:45:39]  Waiting for arming...
+[19-08-2023 17:45:39] Arming motors
+[19-08-2023 17:45:40] Taking off!
+[19-08-2023 17:45:40]  Altitude: 0.001
+[19-08-2023 17:45:41]  Altitude: 0.001
+[19-08-2023 17:45:42]  Altitude: 0.011
+[19-08-2023 17:45:43]  Altitude: 0.984
+[19-08-2023 17:45:44]  Altitude: 1.489
+[19-08-2023 17:45:44] Reached target altitude
+[19-08-2023 17:45:58] Disarming motors
+[19-08-2023 17:45:59] Sleeping for 5 seconds
+[19-08-2023 17:45:59] Land vehicle
+[19-08-2023 17:45:59] Preparing to LAND
+[19-08-2023 17:46:20] Initializing vehicle connection
+[19-08-2023 17:46:20] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 17:46:20] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 17:46:20] Frame: QUAD
+[19-08-2023 17:46:21] Start of test code
+[19-08-2023 17:46:21] Description -> Takeoff and Land
+[19-08-2023 17:46:21] Arm and Takeoff in guided mode
+[19-08-2023 17:46:21] Basic pre-arm checks
+[19-08-2023 17:46:21] Arming motors
+[19-08-2023 17:46:21]  Waiting for arming...
+[19-08-2023 17:46:21] Arming motors
+[19-08-2023 17:46:22] Taking off!
+[19-08-2023 17:46:22]  Altitude: 0.002
+[19-08-2023 17:46:23]  Altitude: 0.002
+[19-08-2023 17:46:24]  Altitude: 0.064
+[19-08-2023 17:46:25]  Altitude: 1.12
+[19-08-2023 17:46:26]  Altitude: 1.515
+[19-08-2023 17:46:26] Reached target altitude
+[19-08-2023 17:47:58] Initializing vehicle connection
+[19-08-2023 17:47:58] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 17:47:58] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 17:47:58] Frame: QUAD
+[19-08-2023 17:47:59] Start of test code
+[19-08-2023 17:47:59] Description -> Takeoff and Land
+[19-08-2023 17:47:59] Arm and Takeoff in guided mode
+[19-08-2023 17:47:59] Basic pre-arm checks
+[19-08-2023 17:47:59] Arming motors
+[19-08-2023 17:47:59] Taking off!
+[19-08-2023 17:47:59]  Altitude: 1.647
+[19-08-2023 17:47:59] Reached target altitude
+[19-08-2023 17:48:13] Disarming motors
+[19-08-2023 17:48:14] Sleeping for 5 seconds
+[19-08-2023 17:48:14] Land vehicle
+[19-08-2023 17:48:14] Preparing to LAND
+[19-08-2023 17:48:38] Initializing vehicle connection
+[19-08-2023 17:48:39] ArduCopter V4.0.4 (40502bd9)
+[19-08-2023 17:48:39] fa520c9732e24cab920e5fe4420d378f
+[19-08-2023 17:48:39] Frame: QUAD
+[19-08-2023 17:48:39] Start of test code
+[19-08-2023 17:48:39] Description -> Takeoff and Land
+[19-08-2023 17:48:39] Arm and Takeoff in guided mode
+[19-08-2023 17:48:39] Basic pre-arm checks
+[19-08-2023 17:48:39] Arming motors
+[19-08-2023 17:48:39]  Waiting for arming...
+[19-08-2023 17:48:39] Arming motors
+[19-08-2023 17:48:40] Taking off!
+[19-08-2023 17:48:40]  Altitude: 0.0
+[19-08-2023 17:48:41]  Altitude: 0.001
+[19-08-2023 17:48:42]  Altitude: 0.022
+[19-08-2023 17:48:43]  Altitude: 0.967
+[19-08-2023 17:48:44]  Altitude: 1.445
+[19-08-2023 17:48:44] Reached target altitude
+[19-08-2023 17:49:13] Disarming motors
+[19-08-2023 17:49:14] Sleeping for 5 seconds
+[19-08-2023 17:49:14] Land vehicle
+[19-08-2023 17:49:14] Preparing to LAND

@@ -4,7 +4,7 @@ from guidance import Vant
 
 logging_filename = f'fly_2_meters_north.log'
 logging.basicConfig(format='[%(asctime)s] %(message)s', datefmt='%d-%m-%Y %H:%M:%S',
-                    filename=logging_filename, encoding='utf-8', level=logging.DEBUG)
+                    filename=logging_filename, level=logging.DEBUG)
 
 """ Initializing vehicle connection"""
 print("Initializing vehicle connection")
@@ -28,7 +28,15 @@ vehicle.arm_and_takeoff()
 print("Move Vant in 2 meters north")
 logging.info("Move Vant in 2 meters north")
 
-vehicle.goto_position_target_local_ned(north=2, east=0)
+vehicle.goto_position_target_local_ned(north=2, east=2)
+vehicle.condition_yaw(10)
+time.sleep(5)
+vehicle.goto_position_target_local_ned(north=3, east=2)
+vehicle.condition_yaw(10)
+time.sleep(5)
+
+
+
 """ Sleeping for 5 seconds """
 print("Sleeping for 5 seconds")
 logging.info("Sleeping for 5 seconds")

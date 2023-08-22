@@ -1,9 +1,8 @@
 import time
-from dronekit import connect, VehicleMode, LocationGlobalRelative
+from dronekit import connect, VehicleMode
 from constants import PIXHAWK_ADDRESS, FLIGHT_ALTITUDE_METERS
 import logging
 from pymavlink import mavutil
-import math
 
 
 class Vant:
@@ -73,12 +72,6 @@ class Vant:
     def lidar_distance(self):
         return self.vehicle.rangefinder.distance
 
-    def groundspeed(self, groundspeed):
-        return self.vehicle.groundspeed(groundspeed)
-
-    def mode(self, mode):
-        self.vehicle.mode = VehicleMode(mode)
-
     def arm_and_takeoff(self):
         """
         Arms vehicle and fly to aTargetAltitude.
@@ -87,10 +80,10 @@ class Vant:
         print("Basic pre-arm checks")
         logging.info("Basic pre-arm checks")
         # Don't let the user try to arm until autopilot is ready
-        #while not self.vehicle.is_armable:
-         #   print(" Waiting for vehicle to initialise...")
-          #  logging.info(" Waiting for vehicle to initialise...")
-           # time.sleep(1)
+        while not self.vehicle.is_armable:
+            print(" Waiting for vehicle to initialise...")
+            logging.info(" Waiting for vehicle to initialise...")
+            time.sleep(1)
 
         print("Arming motors")
         logging.info("Arming motors")
@@ -149,13 +142,9 @@ class Vant:
         # send command to vehicle
         self.vehicle.send_mavlink(msg)
 
-    def get_bearing(self, aLocation1, aLocation2):
-        off_x = aLocation2.lon - aLocation1.lon
-        off_y = aLocation2.lat - aLocation1.lat
-        bearing = 90.00 + math.atan2(-off_y, off_x) * 57.2957795
-        if bearing < 0:
-            bearing += 360.00
-        return bearing
+    def yaw(self, heading):
+        self.vehicle.mav.command_long_send(the_connection.target_system, the_connection.target_component,
+                                           mavutil.mavlink.MAV_CMD_CONDITION_YAW, 0, 45, 25, -1, 1, 0, 0, 0)
 
     def goto_position_target_local_ned(self, north, east):
         """
@@ -177,7 +166,7 @@ class Vant:
         msg = self.vehicle.message_factory.set_position_target_local_ned_encode(
             0,  # time_boot_ms (not used)
             0, 0,  # target system, target component
-            mavutil.mavlink.MAV_FRAME_LOCAL_NED,  # frame
+            mavutil.mavlink.MAV_FRAME_BODY_FRD,  # frame
             0b0000111111111000,  # type_mask (only positions enabled)
             north, east, down,  # x, y, z positions (or North, East, Down in the MAV_FRAME_BODY_NED frame
             0, 0, 0,  # x, y, z velocity in m/s  (not used)
@@ -185,10 +174,6 @@ class Vant:
             0, 0)  # yaw, yaw_rate (not supported yet, ignored in GCS_Mavlink)
         # send command to vehicle
         self.vehicle.send_mavlink(msg)
-
-    def goto(self, latitude, longitude, altitude):
-        point = LocationGlobalRelative(latitude, longitude, altitude)
-        self.vehicle.simple_goto(point)
 
     def land(self):
         print("Preparing to LAND")
