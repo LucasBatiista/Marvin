@@ -41,7 +41,7 @@ while len(path) != 0:
     if 0.3 < vehicle.lidar_distance < 1.0:
         start_time_rrt = datetime.datetime.now()
         print("OBSTACLE DETECTED !")
-        loggin.info("OBSTACLE DETECTED !")
+        logging.info("OBSTACLE DETECTED !")
         rrt_graph = RRT(start=[vehicle.latitude, vehicle.longitude, 0], arrival=[-3.072764893793319,-59.99096969095618], logging_file=logging_filename,
                         csv_filename=f'fly_RRT_with_obstacles_final{csv_file_counter}')
         path = rrt_graph.get_path()
