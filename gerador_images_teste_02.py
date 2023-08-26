@@ -75,19 +75,22 @@ caminho_cumprido = [[-3.0726804, -59.990995],
                     [-3.07274, -59.99099],
                     [-3.0727507, -59.9909887],
                     [-3.0727582, -59.9909878],
-                    [-3.0727582, -59.9909878],
-                    [-3.0727645, -59.99098]]
+                    [-3.0727645, -59.99098],
+                    [-3.0727646, -59.990974]]
 
 x_points = [(x[1] - longitude_origem) / conversao_longitude for x in primeira_geracao]
 y_points = [(y[0] - latitude_origem) / conversao_latitude for y in primeira_geracao]
 plt.plot(x_points, y_points, 'o', color='darkorange', label='Coordenadas geradas')
 plt.plot(x_points[0], y_points[0], 'o', color='darkgreen', label='Coordenada inicial')
-x_destino = (-59.99096969095618 - longitude_origem) / conversao_longitude
-y_destino = (-3.072764893793319 - latitude_origem) / conversao_latitude
+x_destino = (longitude_destino - longitude_origem) / conversao_longitude
+y_destino = (latitude_destino - latitude_origem) / conversao_latitude
 plt.plot(x_destino, y_destino, 'o', color='red', label='Coordenada destino')
+center = x_destino, y_destino
+circle = plt.Circle(center, radius=1, fill=False, color='red', label='Região de Destino')
+plt.gcf().gca().add_patch(circle)
 plt.rc('axes', labelsize=4)
 plt.ylim(0, 20)
-plt.xlim(0, 9)
+plt.xlim(0, 20)
 plt.ylabel("Distância no sentido Norte em metros")
 plt.xlabel("Distância no sentido Leste em metros")
 plt.grid(color='b', linestyle='-', linewidth=0.1)
@@ -102,6 +105,7 @@ plt.savefig('teste_02_coordenadas_caminho.png', dpi=300)
 
 x_points = [(x[1] - longitude_origem) / conversao_longitude for x in caminho_cumprido]
 y_points = [(y[0] - latitude_origem) / conversao_latitude for y in caminho_cumprido]
-plt.plot(x_points, y_points, 'o', color='darkblue', linestyle="-", label='Caminho executado')
+plt.plot(x_points[1:], y_points[1:], 'o', color='darkblue', linestyle="-", label='Caminho executado')
+plt.plot(x_points[0], y_points[0], 'v', color='darkblue', label='Posição inicial do VANT')
 plt.legend()
 plt.savefig('teste_02_coordenadas_cumpridas.png', dpi=300)

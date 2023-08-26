@@ -1,0 +1,83 @@
+[17-08-2023 17:36:48][mavlink] mav recv error: invalid MAVLink prefix '0'
+[17-08-2023 17:36:48][__init__] ArduCopter V4.3.7 (c8506ed4)
+[17-08-2023 17:36:48][__init__] ChibiOS: a97ccb41
+[17-08-2023 17:36:48][__init__] Pixhawk1 0049003F 34355114 30303830
+[17-08-2023 17:36:48][__init__] RCOut: PWM:1-14
+[17-08-2023 17:36:48][__init__] IMU0: fast sampling enabled 8.0kHz/1.0kHz
+[17-08-2023 17:36:48][__init__] Frame: QUAD/X
+[17-08-2023 17:36:49][__init__] Still waiting for data from vehicle: attitude,gps_0,parameters
+[17-08-2023 17:36:50][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:36:51][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:36:52][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:36:53][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:36:54][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:36:55][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:36:56][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:36:57][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:36:58][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:36:59][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:37:00][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:37:01][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:37:02][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:31][mavlink] mav recv error: invalid MAVLink prefix '1'
+[17-08-2023 17:18:31][__init__] ArduCopter V4.3.7 (c8506ed4)
+[17-08-2023 17:18:31][__init__] ChibiOS: a97ccb41
+[17-08-2023 17:18:31][__init__] Pixhawk1 0049003F 34355114 30303830
+[17-08-2023 17:18:31][__init__] RCOut: PWM:1-14
+[17-08-2023 17:18:31][__init__] IMU0: fast sampling enabled 8.0kHz/1.0kHz
+[17-08-2023 17:18:31][__init__] Frame: QUAD/X
+[17-08-2023 17:18:32][__init__] Still waiting for data from vehicle: parameters,attitude,gps_0
+[17-08-2023 17:18:33][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:34][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:35][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:36][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:37][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:38][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:39][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:40][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:41][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:42][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:43][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:44][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:45][__init__] Still waiting for data from vehicle: parameters
+[17-08-2023 17:18:45][guidance] Basic pre-arm checks
+[17-08-2023 17:18:45][guidance] Arming motors
+[17-08-2023 17:18:45][guidance]  Waiting for arming...
+[17-08-2023 17:18:45][__init__] Warning: Arming Checks Disabled
+[17-08-2023 17:18:46][guidance] Taking off!
+[17-08-2023 17:18:46][guidance]  Altitude: 0.071
+[17-08-2023 17:18:47][guidance]  Altitude: 0.224
+[17-08-2023 17:18:48][guidance]  Altitude: 0.336
+[17-08-2023 17:18:49][__init__] EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+[17-08-2023 17:18:49][__init__] EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+[17-08-2023 17:18:49][guidance]  Altitude: 1.068
+[17-08-2023 17:18:50][guidance]  Altitude: 1.721
+[17-08-2023 17:18:51][guidance]  Altitude: 1.665
+[17-08-2023 17:18:52][guidance]  Altitude: 1.838
+[17-08-2023 17:18:53][guidance]  Altitude: 1.959
+[17-08-2023 17:18:53][guidance] Reached target altitude
+[17-08-2023 17:18:53][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072687944783805 Long:-59.99099406669831
+[17-08-2023 17:18:53][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726804, Long -59.990995
+[17-08-2023 17:18:57][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072696710722812 Long:-59.99099205482102
+[17-08-2023 17:18:57][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726876, Long -59.9909947
+[17-08-2023 17:19:01][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072705402476889 Long:-59.99098974257538
+[17-08-2023 17:19:01][test_fly_RRT_with_obstacles] Actual location: Lat -3.0726979, Long -59.9909934
+[17-08-2023 17:19:05][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727071832624206 Long:-59.990980914754225
+[17-08-2023 17:19:05][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727064, Long -59.9909877
+[17-08-2023 17:19:09][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072715038485158 Long:-59.9909765297306
+[17-08-2023 17:19:09][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727066, Long -59.9909823
+[17-08-2023 17:19:13][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072724007348497 Long:-59.990977191891325
+[17-08-2023 17:19:13][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727149, Long -59.9909748
+[17-08-2023 17:19:17][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072731953763163 Long:-59.99098140891615
+[17-08-2023 17:19:17][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727242, Long -59.9909766
+[17-08-2023 17:19:21][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072740391474336 Long:-59.99098452510601
+[17-08-2023 17:19:21][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727318, Long -59.9909825
+[17-08-2023 17:19:25][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072748837952565 Long:-59.990987617384796
+[17-08-2023 17:19:25][test_fly_RRT_with_obstacles] Actual location: Lat -3.07274, Long -59.99099
+[17-08-2023 17:19:29][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727578101175643 Long:-59.99098823305596
+[17-08-2023 17:19:29][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727507, Long -59.9909887
+[17-08-2023 17:19:33][test_fly_RRT_with_obstacles] Going to path point Lat:-3.0727644846991344 Long:-59.99098219713409
+[17-08-2023 17:19:33][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727582, Long -59.9909878
+[17-08-2023 17:19:37][test_fly_RRT_with_obstacles] Going to path point Lat:-3.072763492495157 Long:-59.990973245962934
+[17-08-2023 17:19:37][test_fly_RRT_with_obstacles] Actual location: Lat -3.0727645, Long -59.99098
+[17-08-2023 17:19:41][guidance] Preparing to LAND

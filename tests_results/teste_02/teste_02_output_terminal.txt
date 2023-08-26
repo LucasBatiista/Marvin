@@ -1,0 +1,43 @@
+Generation took: 0:00:00.019342
+Nodes:46
+Path has: 12 nodes
+Path points: [[-3.072687944783805, -59.99099406669831], [-3.072696710722812, -59.99099205482102], [-3.072705402476889, -59.99098974257538], [-3.0727071832624206, -59.990980914754225], [-3.072715038485158, -59.9909765297306], [-3.072724007348497, -59.990977191891325], [-3.072731953763163, -59.99098140891615], [-3.072740391474336, -59.99098452510601], [-3.072748837952565, -59.990987617384796], [-3.0727578101175643, -59.99098823305596], [-3.0727644846991344, -59.99098219713409], [-3.072763492495157, -59.990973245962934]]
+Basic pre-arm checks
+Arming motors
+ Waiting for arming...
+Taking off!
+ Altitude:  0.071
+ Altitude:  0.224
+ Altitude:  0.336
+ Altitude:  1.068
+ Altitude:  1.721
+ Altitude:  1.665
+ Altitude:  1.838
+ Altitude:  1.959
+Reached target altitude
+Going to path point Lat:-3.072687944783805 Long:-59.99099406669831
+Actual location: Lat -3.0726804, Long -59.990995
+Going to path point Lat:-3.072696710722812 Long:-59.99099205482102
+Actual location: Lat -3.0726876, Long -59.9909947
+Going to path point Lat:-3.072705402476889 Long:-59.99098974257538
+Actual location: Lat -3.0726979, Long -59.9909934
+Going to path point Lat:-3.0727071832624206 Long:-59.990980914754225
+Actual location: Lat -3.0727064, Long -59.9909877
+Going to path point Lat:-3.072715038485158 Long:-59.9909765297306
+Actual location: Lat -3.0727066, Long -59.9909823
+Going to path point Lat:-3.072724007348497 Long:-59.990977191891325
+Actual location: Lat -3.0727149, Long -59.9909748
+Going to path point Lat:-3.072731953763163 Long:-59.99098140891615
+Actual location: Lat -3.0727242, Long -59.9909766
+Going to path point Lat:-3.072740391474336 Long:-59.99098452510601
+Actual location: Lat -3.0727318, Long -59.9909825
+Going to path point Lat:-3.072748837952565 Long:-59.990987617384796
+Actual location: Lat -3.07274, Long -59.99099
+Going to path point Lat:-3.0727578101175643 Long:-59.99098823305596
+Actual location: Lat -3.0727507, Long -59.9909887
+Going to path point Lat:-3.0727644846991344 Long:-59.99098219713409
+Actual location: Lat -3.0727582, Long -59.9909878
+Going to path point Lat:-3.072763492495157 Long:-59.990973245962934
+Actual location: Lat -3.0727645, Long -59.99098
+Execution to reach goal took 0:00:48.078772
+Preparing to LAND
