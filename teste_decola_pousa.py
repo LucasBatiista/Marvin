@@ -23,9 +23,6 @@ print("Arm and Takeoff in guided mode")
 logging.info("Arm and Takeoff in guided mode")
 
 vehicle.arm_and_takeoff()
-time.sleep(15)
-vehicle.mode("LOITER")
-time.sleep(15)
 print("Sleeping for 5 seconds")
 logging.info("Sleeping for 5 seconds")
 """ Land vehicle """

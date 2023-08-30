@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from geopy.distance import great_circle
 
 latitude_origem, longitude_origem = -3.0727958048845725, -59.991017392035396
 latitude_destino, longitude_destino = -3.072764893793319, -59.99096969095618
@@ -78,34 +79,41 @@ caminho_cumprido = [[-3.0726804, -59.990995],
                     [-3.0727645, -59.99098],
                     [-3.0727646, -59.990974]]
 
-x_points = [(x[1] - longitude_origem) / conversao_longitude for x in primeira_geracao]
-y_points = [(y[0] - latitude_origem) / conversao_latitude for y in primeira_geracao]
-plt.plot(x_points, y_points, 'o', color='darkorange', label='Coordenadas geradas')
-plt.plot(x_points[0], y_points[0], 'o', color='darkgreen', label='Coordenada inicial')
-x_destino = (longitude_destino - longitude_origem) / conversao_longitude
-y_destino = (latitude_destino - latitude_origem) / conversao_latitude
-plt.plot(x_destino, y_destino, 'o', color='red', label='Coordenada destino')
-center = x_destino, y_destino
-circle = plt.Circle(center, radius=1, fill=False, color='red', label='Região de Destino')
-plt.gcf().gca().add_patch(circle)
-plt.rc('axes', labelsize=4)
-plt.ylim(0, 20)
-plt.xlim(0, 20)
-plt.ylabel("Distância no sentido Norte em metros")
-plt.xlabel("Distância no sentido Leste em metros")
-plt.grid(color='b', linestyle='-', linewidth=0.1)
-plt.legend()
-plt.savefig('teste_02_coordenadas_geradas.png', dpi=300)
+# x_points = [(x[1] - longitude_origem) / conversao_longitude for x in primeira_geracao]
+# y_points = [(y[0] - latitude_origem) / conversao_latitude for y in primeira_geracao]
+# plt.plot(x_points, y_points, '.', color='darkorange', label='Coordenadas geradas')
+# plt.plot(x_points[0], y_points[0], 'o', color='darkgreen', label='Coordenada inicial')
+# x_destino = (longitude_destino - longitude_origem) / conversao_longitude
+# y_destino = (latitude_destino - latitude_origem) / conversao_latitude
+# plt.plot(x_destino, y_destino, 'o', color='red', label='Coordenada destino')
+# center = x_destino, y_destino
+# circle = plt.Circle(center, radius=1, fill=False, color='red', label='Região de Destino')
+# plt.gcf().gca().add_patch(circle)
+# plt.rc('axes', labelsize=4)
+# plt.ylim(0, 20)
+# plt.xlim(0, 20)
+# plt.ylabel("Distância no sentido Norte em metros")
+# plt.xlabel("Distância no sentido Leste em metros")
+# plt.grid(color='b', linestyle='-', linewidth=0.1)
+# plt.legend()
+# plt.savefig('teste_02_coordenadas_geradas.png', dpi=300)
+#
+# x_points = [(x[1] - longitude_origem) / conversao_longitude for x in caminho]
+# y_points = [(y[0] - latitude_origem) / conversao_latitude for y in caminho]
+# plt.plot(x_points, y_points, 'o', color='greenyellow', linestyle="--", label='Caminho gerado')
+# plt.legend()
+# plt.savefig('teste_02_coordenadas_caminho.png', dpi=300)
+#
+# x_points = [(x[1] - longitude_origem) / conversao_longitude for x in caminho_cumprido]
+# y_points = [(y[0] - latitude_origem) / conversao_latitude for y in caminho_cumprido]
+# plt.plot(x_points[1:], y_points[1:], 'o', color='darkblue', linestyle="-", label='Caminho executado')
+# plt.plot(x_points[0], y_points[0], 'v', color='darkblue', label='Posição inicial do VANT')
+# plt.legend()
+# plt.savefig('teste_02_coordenadas_cumpridas.png', dpi=300)
 
-x_points = [(x[1] - longitude_origem) / conversao_longitude for x in caminho]
-y_points = [(y[0] - latitude_origem) / conversao_latitude for y in caminho]
-plt.plot(x_points, y_points, 'o', color='greenyellow', linestyle="--", label='Caminho gerado')
-plt.legend()
-plt.savefig('teste_02_coordenadas_caminho.png', dpi=300)
+media = []
+for i in range(len(caminho)):
+    print(f"{great_circle(caminho[i], caminho_cumprido[i]).meters}")
+    media.append(great_circle(caminho[i], caminho_cumprido[i]).meters)
 
-x_points = [(x[1] - longitude_origem) / conversao_longitude for x in caminho_cumprido]
-y_points = [(y[0] - latitude_origem) / conversao_latitude for y in caminho_cumprido]
-plt.plot(x_points[1:], y_points[1:], 'o', color='darkblue', linestyle="-", label='Caminho executado')
-plt.plot(x_points[0], y_points[0], 'v', color='darkblue', label='Posição inicial do VANT')
-plt.legend()
-plt.savefig('teste_02_coordenadas_cumpridas.png', dpi=300)
+print(f"media {round(sum(media)/len(media), 2)}")

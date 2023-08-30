@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from geopy.distance import great_circle
 
 latitude_origem, longitude_origem = -3.0727958048845725, -59.991017392035396
 latitude_destino, longitude_destino = -3.072764893793319, -59.99096969095618
@@ -43,24 +44,24 @@ primeira_geracao = [[-3.0726447, -59.990993, 0],
                     [-3.072695263042954, -59.99096982895985, 24],
                     [-3.072760037867194, -59.99096655865702, 28]]
 
-x_points = [(x[1] - longitude_origem) / conversao_longitude for x in primeira_geracao]
-y_points = [(y[0] - latitude_origem) / conversao_latitude for y in primeira_geracao]
-plt.plot(x_points, y_points, 'o', color='darkorange', label='Coordenadas geradas')
-plt.plot(x_points[0], y_points[0], 'o', color='darkgreen', label='Coordenada inicial')
-x_destino = (longitude_destino - longitude_origem) / conversao_longitude
-y_destino = (latitude_destino - latitude_origem) / conversao_latitude
-plt.plot(x_destino, y_destino, 'o', color='red', label='Coordenada destino')
-center = x_destino, y_destino
-circle = plt.Circle(center, radius=1, fill=False, color='red', label='Região de Destino')
-plt.gcf().gca().add_patch(circle)
-plt.rc('axes', labelsize=4)
-plt.ylim(0, 20)
-plt.xlim(0, 20)
-plt.ylabel("Distância no sentido Norte em metros")
-plt.xlabel("Distância no sentido Leste em metros")
-plt.grid(color='b', linestyle='-', linewidth=0.1)
-plt.legend()
-plt.savefig('teste_03_coordenadas_geradas.png', dpi=300)
+# x_points = [(x[1] - longitude_origem) / conversao_longitude for x in primeira_geracao]
+# y_points = [(y[0] - latitude_origem) / conversao_latitude for y in primeira_geracao]
+# plt.plot(x_points, y_points, '.', color='darkorange', label='Coordenadas geradas')
+# plt.plot(x_points[0], y_points[0], 'o', color='darkgreen', label='Coordenada inicial')
+# x_destino = (longitude_destino - longitude_origem) / conversao_longitude
+# y_destino = (latitude_destino - latitude_origem) / conversao_latitude
+# plt.plot(x_destino, y_destino, 'o', color='red', label='Coordenada destino')
+# center = x_destino, y_destino
+# circle = plt.Circle(center, radius=1, fill=False, color='red', label='Região de Destino')
+# plt.gcf().gca().add_patch(circle)
+# plt.rc('axes', labelsize=4)
+# plt.ylim(0, 20)
+# plt.xlim(0, 20)
+# plt.ylabel("Distância no sentido Norte em metros")
+# plt.xlabel("Distância no sentido Leste em metros")
+# plt.grid(color='b', linestyle='-', linewidth=0.1)
+# plt.legend()
+# plt.savefig('teste_03_coordenadas_geradas.png', dpi=300)
 
 primeiro_caminho = [[-3.0726536215392146, -59.99099186530002],
                     [-3.072661925236923, -59.99099532372112],
@@ -78,22 +79,24 @@ primeiro_caminho = [[-3.0726536215392146, -59.99099186530002],
                     [-3.0727555284498322, -59.990974350789365],
                     [-3.072760037867194, -59.99096655865702]]
 
-x_points = [(x[1] - longitude_origem) / conversao_longitude for x in primeiro_caminho]
-y_points = [(y[0] - latitude_origem) / conversao_latitude for y in primeiro_caminho]
-plt.plot(x_points, y_points, 'o', color='greenyellow', linestyle="--", label='Primeiro caminho gerado')
-plt.legend()
-plt.savefig('teste_03_primeiro_caminho.png', dpi=300)
+# x_points = [(x[1] - longitude_origem) / conversao_longitude for x in primeiro_caminho]
+# y_points = [(y[0] - latitude_origem) / conversao_latitude for y in primeiro_caminho]
+# plt.plot(x_points, y_points, 'o', color='greenyellow', linestyle="--", label='Primeiro caminho gerado')
+# plt.legend()
+# plt.savefig('teste_03_primeiro_caminho.png', dpi=300)
 
 primero_caminho_cumprido = [[-3.0726501, -59.9909915],
                             [-3.0726551, -59.9909928],
                             [-3.0726634, -59.9909956],
                             [-3.0726719, -59.990994]]
 
-x_points = [(x[1] - longitude_origem) / conversao_longitude for x in primero_caminho_cumprido]
-y_points = [(y[0] - latitude_origem) / conversao_latitude for y in primero_caminho_cumprido]
-plt.plot(x_points, y_points, 'o', color='darkblue', linestyle="-", label='Primeiro caminho executado')
-plt.legend()
-plt.savefig('teste_03_primeiro_caminho_cumprido.png', dpi=300)
+# x_points = [(x[1] - longitude_origem) / conversao_longitude for x in primero_caminho_cumprido]
+# y_points = [(y[0] - latitude_origem) / conversao_latitude for y in primero_caminho_cumprido]
+# plt.plot(x_points, y_points, 'o', color='darkblue', linestyle="-", label='Primeiro caminho executado')
+# rectangle = plt.Rectangle((2.9, 13.0), 0.2, 1, angle=-35, color='black', label='Obstáculo')
+# plt.gcf().gca().add_patch(rectangle)
+# plt.legend()
+# plt.savefig('teste_03_primeiro_caminho_cumprido.png', dpi=300)
 
 segunda_geracao = [[-3.0726808, -59.990994, 0],
                    [-3.0726896726601356, -59.99099253036923, 0],
@@ -122,11 +125,11 @@ segunda_geracao = [[-3.0726808, -59.990994, 0],
                    [-3.072756769402691, -59.99098501229648, 20],
                    [-3.072761320607623, -59.99097724456741, 24]]
 
-x_points = [(x[1] - longitude_origem) / conversao_longitude for x in segunda_geracao]
-y_points = [(y[0] - latitude_origem) / conversao_latitude for y in segunda_geracao]
-plt.plot(x_points, y_points, 'o', color='darkcyan', label='Novas coordenadas geradas')
-plt.legend()
-plt.savefig('teste_03_segunda_geracao.png', dpi=300)
+# x_points = [(x[1] - longitude_origem) / conversao_longitude for x in segunda_geracao]
+# y_points = [(y[0] - latitude_origem) / conversao_latitude for y in segunda_geracao]
+# plt.plot(x_points, y_points, '.', color='darkcyan', label='Novas coordenadas geradas')
+# plt.legend()
+# plt.savefig('teste_03_segunda_geracao.png', dpi=300)
 
 segundo_caminho = [[-3.0726808, -59.990994],
                    [-3.0726896726601356, -59.99099253036923],
@@ -141,11 +144,11 @@ segundo_caminho = [[-3.0726808, -59.990994],
                    [-3.072756769402691, -59.99098501229648],
                    [-3.072761320607623, -59.99097724456741]]
 
-x_points = [(x[1] - longitude_origem) / conversao_longitude for x in segundo_caminho]
-y_points = [(y[0] - latitude_origem) / conversao_latitude for y in segundo_caminho]
-plt.plot(x_points, y_points, 'o', color='deepskyblue', linestyle="--", label='Segundo caminho gerado')
-plt.legend()
-plt.savefig('teste_03_segundo_caminho.png', dpi=300)
+# x_points = [(x[1] - longitude_origem) / conversao_longitude for x in segundo_caminho]
+# y_points = [(y[0] - latitude_origem) / conversao_latitude for y in segundo_caminho]
+# plt.plot(x_points, y_points, 'o', color='deepskyblue', linestyle="--", label='Segundo caminho gerado')
+# plt.legend()
+# plt.savefig('teste_03_segundo_caminho.png', dpi=300)
 
 segundo_caminho_cumprido = [[-3.0726719, -59.990994],
                             [-3.0726808, -59.990994],
@@ -159,10 +162,27 @@ segundo_caminho_cumprido = [[-3.0726719, -59.990994],
                             [-3.0726931, -59.9909715],
                             [-3.0727278, -59.991005]]
 
-x_points = [(x[1] - longitude_origem) / conversao_longitude for x in segundo_caminho_cumprido]
-y_points = [(y[0] - latitude_origem) / conversao_latitude for y in segundo_caminho_cumprido]
-plt.plot(x_points, y_points, 'o', color='steelblue', linestyle="-", label='Segundo caminho executado')
-plt.legend()
-plt.savefig('teste_03_segundo_caminho_cumprido.png', dpi=300)
+# x_points = [(x[1] - longitude_origem) / conversao_longitude for x in segundo_caminho_cumprido]
+# y_points = [(y[0] - latitude_origem) / conversao_latitude for y in segundo_caminho_cumprido]
+# plt.plot(x_points, y_points, 'o', color='steelblue', linestyle="-", label='Segundo caminho executado')
+# plt.legend()
+# plt.savefig('teste_03_segundo_caminho_cumprido.png', dpi=300)
+#
+# glitch_position = [-3.0727419, -59.9909886]
+# plt.plot(((glitch_position[1] - longitude_origem) / conversao_longitude), (glitch_position[0] - latitude_origem) / conversao_latitude,
+#          'o', color='magenta', label='Ocorrência de erro do GPS')
+# plt.legend()
+# plt.savefig('teste_03_perda_gps.png', dpi=300)
 
 
+# media_primeiro_caminho = []
+# for i in range(len(primero_caminho_cumprido)):
+#     media_primeiro_caminho.append(great_circle(primero_caminho_cumprido[i], primeiro_caminho[i]).meters)
+#     print(great_circle(primero_caminho_cumprido[i], primeiro_caminho[i]).meters)
+# print(f"{round(sum(media_primeiro_caminho)/len(media_primeiro_caminho),2)}")
+
+media_segundo_caminho = []
+for i in range(9):
+    media_segundo_caminho.append(great_circle(segundo_caminho_cumprido[i], segundo_caminho[i]).meters)
+    print(great_circle(segundo_caminho_cumprido[i], segundo_caminho[i]).meters)
+print(f"{round(sum(media_segundo_caminho)/len(media_segundo_caminho),2)}")
